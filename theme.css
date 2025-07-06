@@ -1,0 +1,65 @@
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css"); 
+
+:root {
+    --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.builder-font, .builder-font h1, .builder-font .h1, .builder-font h2, .builder-font .h2, .builder-font h3, .builder-font .h3, .builder-font h4, .builder-font .h4, .builder-font h5, .builder-font .h5, .builder-font h6, .builder-font .h6, .builder-font html, .builder-font body, .builder-font pre, .builder-font input, .builder-font textarea, .builder-font select, .builder-font button, .builder-font .text {
+    font-family: "Google Sans", sans-serif !important
+}
+
+.dark-theme {
+    --MainBackgroundColor: rgb(21, 22, 25);
+    --ContentBackgroundColor: rgb(33, 35, 38);
+    --NavbarBackgroundColor: rgb(14, 15, 17);
+    --SearchBarBackgroundColor: rgb(39, 39, 42);
+}
+
+.light-theme {
+    --MainBackgroundColor: rgb(250, 250, 250);
+    --ContentBackgroundColor: rgb(228, 230, 231);
+    --NavbarBackgroundColor: rgb(232, 232, 232);
+    --SearchBarBackgroundColor: rgb(207, 207, 207);
+}
+
+.rbx-left-col {
+    background-color: var(--NavbarBackgroundColor) !important;
+}
+
+.navbar-fixed-top {
+    background-color: var(--NavbarBackgroundColor) !important;
+    border: solid transparent !important;
+    border-width: 0 0 1px !important;
+}
+
+.container-main {
+    background-color: var(--MainBackgroundColor) !important;
+}
+
+.content {
+    background-color: var(--MainBackgroundColor) !important;
+}
+
+.section-content {
+    border-radius: 18px !important;
+    background-color: var(--ContentBackgroundColor) !important; 
+}
+
+.game-details-carousel-container {
+    border-radius: 18px !important;
+}
+
+.form-control {
+    border-radius: 16px !important;
+}
+
+.game-details-play-button-container > button {
+    border-radius: 16px !important;
+    transition: width 250ms var(--CubicBezierAnimation), height 250ms var(--CubicBezierAnimation);
+    min-height: 0 !important;
+}
+
+.game-details-play-button-container > button:hover {
+    width: calc(100% + 40px) !important;
+    height: calc(100% + 40px) !important;
+}
