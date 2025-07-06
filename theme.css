@@ -13,6 +13,7 @@
     --ContentBackgroundColor: rgb(33, 35, 38);
     --NavbarBackgroundColor: rgb(14, 15, 17);
     --SearchBarBackgroundColor: rgb(39, 39, 42);
+    --DropdownMenuBackgroundColor: rgb(45, 48, 52);
 }
 
 .light-theme {
@@ -20,6 +21,7 @@
     --ContentBackgroundColor: rgb(228, 230, 231);
     --NavbarBackgroundColor: rgb(232, 232, 232);
     --SearchBarBackgroundColor: rgb(207, 207, 207);
+    --DropdownMenuBackgroundColor: rgb(255, 255, 255);
 }
 
 .rbx-left-col {
@@ -49,17 +51,55 @@
     border-radius: 18px !important;
 }
 
+.navbar-left.navbar-search {
+    background-color: transparent !important;
+}
+
 .form-control {
     border-radius: 16px !important;
+    border: solid transparent !important;
+    background-color: var(--SearchBarBackgroundColor) !important;
 }
 
 .game-details-play-button-container > button {
     border-radius: 16px !important;
-    transition: width 250ms var(--CubicBezierAnimation), height 250ms var(--CubicBezierAnimation);
-    min-height: 0 !important;
+    transition: transform 250ms var(--CubicBezierAnimation);
 }
 
 .game-details-play-button-container > button:hover {
-    width: calc(100% + 40px) !important;
-    height: calc(100% + 40px) !important;
+    transform: scale(1.1);
+}
+
+.btn-growth-sm {
+    border-radius: 16px !important;
+}
+
+.nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
+    animation: border-appear 250ms var(--CubicBezierAnimation);
+}
+
+.dropdown-menu {
+    transform-origin: top;
+    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation);
+    background-color: var(--DropdownMenuBackgroundColor) !important;
+}
+
+.popover.bottom > .arrow:after {
+    border-bottom-color: var(--DropdownMenuBackgroundColor) !important;
+}
+
+.chat-main {
+    transition: height 250ms var(--CubicBezierAnimation), width 250ms var(--CubicBezierAnimation); /* Width too because BTR can change the chat button's width. */
+}
+
+@keyframes border-appear {
+    from {
+        border-bottom-color: rgba(0, 0, 0, 0)
+    }
+}
+
+@keyframes dropdown-menu-anim {
+    from {
+        transform: scale(1, 0.5);
+    }
 }
