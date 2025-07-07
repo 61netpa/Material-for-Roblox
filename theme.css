@@ -5,6 +5,7 @@
     --ButtonBackgroundColor: rgb(85, 123, 226);
     --ButtonTextColor: rgb(246, 246, 246);
     --ButtonHoverColor: rgb(127, 161, 255);
+    --HoveredBorderColor: rgb(132, 132, 132);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
     --ButtonBorderRadius: 20px;
     --ImageBorderRadius: calc(18px / 1.75);
@@ -22,6 +23,9 @@
     --LeftNavbarButtonHoverColor: rgb(43, 45, 49);
     --SearchBarBackgroundColor: rgb(39, 39, 42);
     --DropdownMenuBackgroundColor: rgb(45, 48, 52);
+    --DropdownShadowColor: hsl(none 0% 0% / 0.16);
+    --BottomBorderColor: rgb(58, 60, 65);
+    --SelectedBorderColor: rgb(250, 250, 250);
 }
 
 .light-theme {
@@ -31,6 +35,9 @@
     --LeftNavbarButtonHoverColor: rgb(218, 219, 221);
     --SearchBarBackgroundColor: rgb(207, 207, 207);
     --DropdownMenuBackgroundColor: rgb(255, 255, 255);
+    --DropdownShadowColor: hsl(0, 0%, 0%, 0.28);
+    --BottomBorderColor: rgb(226, 226, 228);
+    --SelectedBorderColor: rgb(50, 51, 57);
 }
 
 .rbx-left-col {
@@ -98,6 +105,9 @@
 }
 
 .tab-horizontal-submenu.section-content {
+    border-radius: 0 0 18px 18px !important;
+    border-top: solid transparent;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     transform-origin: top;
     animation: opacity-anim 250ms var(--CubicBezierAnimation), dropdown-menu-anim 250ms var(--CubicBezierAnimation);
 }
@@ -132,7 +142,7 @@
     background-color: var(--DropdownMenuBackgroundColor) !important;
 }
 
-.btn-growth-sm {
+.btn-growth-sm, .btn-primary-md {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--ButtonBackgroundColor) !important;
 }
@@ -175,6 +185,27 @@
 
 .navbar-right.rbx-navbar-icon-group .btn-navigation-nav-robux-md {
     border-radius: var(--ButtonBorderRadius) !important;
+}
+
+.rbx-tabs-horizontal .nav-tabs {
+    background-color: var(--ContentBackgroundColor) !important;
+    border-radius: 18px 18px 0 0;
+    border-bottom: 1px solid var(--BottomBorderColor);
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+}
+
+.rbx-tabs-horizontal .rbx-tab:hover .rbx-tab-heading {
+    box-shadow: inset 0 -1px var(--HoveredBorderColor) !important;
+}
+
+.rbx-tabs-horizontal .rbx-tab.active .rbx-tab-heading {
+    box-shadow: inset 0 -2px var(--SelectedBorderColor) !important;
+}
+
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading {
+    background-color: rgba(0, 0, 0, 0) !important;
+    box-shadow: none !important;
+    transition: box-shadow 250ms var(--CubicBezierAnimation)
 }
 
 .friends-carousel-tile > button > a { /* Seems like Roblox doesn't know how to center the "Add Friends" button in the home page. */
