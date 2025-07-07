@@ -179,6 +179,10 @@
     justify-content: center;
 }
 
+.item-card-thumb-container, .item-card-thumb {
+    border-radius: 28px !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
