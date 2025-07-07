@@ -1,7 +1,14 @@
-@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css"); 
+@import url("https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/css/fonts/google-sans.css");
+/* I still have no idea how to load fonts from my own GitHub. */
 
 :root {
+    --ButtonBackgroundColor: rgb(85, 123, 226);
+    --ButtonTextColor: rgb(246, 246, 246);
+    --ButtonHoverColor: rgb(127, 161, 255);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
+    --ButtonBorderRadius: 20px;
+    --ImageBorderRadius: calc(18px / 1.75);
+    --RoundBorderRadius: calc(100% / 2);
 }
 
 .builder-font, .builder-font h1, .builder-font .h1, .builder-font h2, .builder-font .h2, .builder-font h3, .builder-font .h3, .builder-font h4, .builder-font .h4, .builder-font h5, .builder-font .h5, .builder-font h6, .builder-font .h6, .builder-font html, .builder-font body, .builder-font pre, .builder-font input, .builder-font textarea, .builder-font select, .builder-font button, .builder-font .text {
@@ -12,6 +19,7 @@
     --MainBackgroundColor: rgb(21, 22, 25);
     --ContentBackgroundColor: rgb(33, 35, 38);
     --NavbarBackgroundColor: rgb(14, 15, 17);
+    --LeftNavbarButtonHoverColor: rgb(43, 45, 49);
     --SearchBarBackgroundColor: rgb(39, 39, 42);
     --DropdownMenuBackgroundColor: rgb(45, 48, 52);
 }
@@ -20,12 +28,54 @@
     --MainBackgroundColor: rgb(250, 250, 250);
     --ContentBackgroundColor: rgb(228, 230, 231);
     --NavbarBackgroundColor: rgb(232, 232, 232);
+    --LeftNavbarButtonHoverColor: rgb(218, 219, 221);
     --SearchBarBackgroundColor: rgb(207, 207, 207);
     --DropdownMenuBackgroundColor: rgb(255, 255, 255);
 }
 
 .rbx-left-col {
     background-color: var(--NavbarBackgroundColor) !important;
+}
+
+.left-col-list > li, .left-col-list .rbx-platform-event-container .rbx-platform-event-header {
+    display: flex !important;
+    transition: background-color 250ms var(--CubicBezierAnimation);
+    border-radius: var(--ButtonBorderRadius);
+    height: 40px;
+    padding-left: 5px;
+    margin-left: -5px;
+    margin-right: -10px;
+}
+
+.left-col-list > li > a {
+    width: 100%;
+}
+
+.left-col-list .dynamic-width-item.align-right {
+    padding-right: 5px;
+}
+
+.left-col-list > li:not(.rbx-upgrade-now):hover, .left-col-list .rbx-platform-event-container .rbx-platform-event-header:hover {
+    background-color: var(--LeftNavbarButtonHoverColor) !important;
+}
+
+.left-col-list .rbx-upgrade-now {
+    width: 160px;
+}
+
+.left-col-list .rbx-upgrade-now .btn-growth-md {
+    width: 100%;
+    margin-left: -8px;
+    border-radius: var(--ButtonBorderRadius);
+    background-color: var(--ButtonBackgroundColor);
+    color: var(--ButtonTextColor) !important;
+    border: solid transparent;
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.left-col-list .rbx-upgrade-now .btn-growth-md:hover {
+    background-color: var(--ButtonHoverColor) !important;
+    border: solid transparent;
 }
 
 .navbar-fixed-top {
@@ -48,7 +98,7 @@
 }
 
 .game-details-carousel-container {
-    border-radius: 18px !important;
+    border-radius: var(--ImageBorderRadius) !important;
 }
 
 .navbar-left.navbar-search {
@@ -70,8 +120,16 @@
     transform: scale(1.1);
 }
 
+.friend-tile-dropdown {
+    border-radius: 8px !important;
+    transform-origin: top;
+    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+    background-color: var(--DropdownMenuBackgroundColor) !important;
+}
+
 .btn-growth-sm {
-    border-radius: 16px !important;
+    border-radius: var(--ButtonBorderRadius) !important;
+    background-color: var(--ButtonBackgroundColor) !important;
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
@@ -80,7 +138,7 @@
 
 .dropdown-menu {
     transform-origin: top;
-    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation);
+    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
     background-color: var(--DropdownMenuBackgroundColor) !important;
 }
 
@@ -92,9 +150,37 @@
     transition: height 250ms var(--CubicBezierAnimation), width 250ms var(--CubicBezierAnimation); /* Width too because BTR can change the chat button's width. */
 }
 
+.game-card-container button:not(.experience-events-tile *) { /* RoPro exclusive to be honest but whatever! */
+    border-radius: calc(100% / 2) !important;
+    background-color: var(--ButtonBackgroundColor) !important;
+}
+
+.game-card-thumb-container, .brief-game-icon {
+    background-color: transparent !important;
+}
+
+.game-card-thumb-container > img, .brief-game-icon > img {
+    border-radius: var(--ImageBorderRadius) !important;
+}
+
+.navbar-right.rbx-navbar-icon-group > li > button:not(.btn-navigation-nav-robux-md), .navbar-right.rbx-navbar-icon-group > li > a {
+    border-radius: var(--RoundBorderRadius) !important;
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.navbar-right.rbx-navbar-icon-group .btn-navigation-nav-robux-md {
+    border-radius: var(--ButtonBorderRadius) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
+    }
+}
+
+@keyframes opacity-anim {
+    from {
+        opacity: 0;
     }
 }
 
