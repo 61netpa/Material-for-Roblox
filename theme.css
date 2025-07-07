@@ -97,6 +97,11 @@
     background-color: var(--ContentBackgroundColor) !important; 
 }
 
+.tab-horizontal-submenu.section-content {
+    transform-origin: top;
+    animation: opacity-anim 250ms var(--CubicBezierAnimation), dropdown-menu-anim 250ms var(--CubicBezierAnimation);
+}
+
 .game-details-carousel-container {
     border-radius: var(--ImageBorderRadius) !important;
 }
