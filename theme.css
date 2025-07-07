@@ -172,6 +172,13 @@
     border-radius: var(--ButtonBorderRadius) !important;
 }
 
+.friends-carousel-tile > button > a { /* Seems like Roblox doesn't know how to center the "Add Friends" button in the home page. */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
