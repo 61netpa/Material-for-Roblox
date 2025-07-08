@@ -95,7 +95,7 @@
     background-color: var(--MainBackgroundColor) !important;
 }
 
-.content {
+.content, .container-footer {
     background-color: var(--MainBackgroundColor) !important;
 }
 
