@@ -220,6 +220,15 @@
     transition: opacity 250ms var(--CubicBezierAnimation) !important;
 }
 
+.page-content .rbx-tabs-horizontal {
+    background-color: var(--ContentBackgroundColor);
+    border-radius: 18px;
+}
+
+.page-content .rbx-tabs-horizontal .rbx-tab-content {
+    padding: 0 12px;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
