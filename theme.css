@@ -142,9 +142,11 @@
     background-color: var(--DropdownMenuBackgroundColor) !important;
 }
 
-.btn-growth-sm, .btn-primary-md {
+.btn-growth-sm, .btn-primary-md, .btn-control-small {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--ButtonBackgroundColor) !important;
+    border: none !important;
+    color: var(--ButtonTextColor) !important;
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
