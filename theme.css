@@ -101,7 +101,8 @@
 
 .section-content {
     border-radius: 18px !important;
-    background-color: var(--ContentBackgroundColor) !important; 
+    background-color: var(--ContentBackgroundColor) !important;
+    padding: 8px 0 0 8px;
 }
 
 .tab-horizontal-submenu.section-content {
