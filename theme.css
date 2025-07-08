@@ -129,7 +129,7 @@
 
 .game-details-play-button-container > button {
     border-radius: 16px !important;
-    transition: transform 250ms var(--CubicBezierAnimation);
+    transition: transform 250ms var(--CubicBezierAnimation), background-color 250ms var(--CubicBezierAnimation);
 }
 
 .game-details-play-button-container > button:hover {
