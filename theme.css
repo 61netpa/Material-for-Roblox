@@ -81,7 +81,7 @@
 }
 
 .left-col-list .rbx-upgrade-now .btn-growth-md:hover {
-    background-color: var(--Accent) !important;
+    background-color: var(--AccentHoverColor) !important;
     border: solid transparent;
 }
 
@@ -136,14 +136,18 @@
     transform: scale(1.1);
 }
 
-.friend-tile-dropdown {
+.friend-tile-dropdown, .web-blox-css-mui-hjn929.MuiPaper-elevation {
     border-radius: 8px !important;
     transform-origin: top;
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
     background-color: var(--DropdownMenuBackgroundColor) !important;
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small {
+.MuiButtonBase-root {
+    border-radius: var(--ButtonBorderRadius);
+}
+
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .web-blox-css-tss-lo77dr-Button-contained {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
@@ -151,8 +155,8 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover {
-    background-color: var(--Accent) !important;
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
+    background-color: var(--AccentHoverColor) !important;
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
@@ -238,6 +242,31 @@
 
 .page-content .rbx-tabs-horizontal .rbx-tab-content {
     padding: 0 12px;
+}
+
+.tab-content.rbx-tab-content {
+    padding: 6px 12px;
+    margin: 0;
+    background-color: var(--ContentBackgroundColor) !important;
+    border-radius: 0 0 18px 18px;
+}
+
+.hlist.game-cards {
+    display: flex;
+}
+
+.hlist.game-cards .list-item.game-card {
+    padding: 0 9px 0 0;
+}
+
+.profile-header-main {
+    border-radius: 18px;
+    padding: 10px;
+    background: var(--ContentBackgroundColor) !important;
+}
+
+.profile-avatar-mask {
+    padding: 20px 11px !important;
 }
 
 @keyframes border-appear {
