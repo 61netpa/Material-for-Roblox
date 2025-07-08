@@ -153,9 +153,12 @@
     animation: border-appear 250ms var(--CubicBezierAnimation);
 }
 
-.dropdown-menu {
+.dropdown-menu, .popover-content {
     transform-origin: top;
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+}
+
+.dropdown-menu {
     background-color: var(--DropdownMenuBackgroundColor) !important;
 }
 
