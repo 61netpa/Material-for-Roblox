@@ -2,9 +2,9 @@
 /* I still have no idea how to load fonts from my own GitHub. */
 
 :root {
-    --ButtonBackgroundColor: rgb(85, 123, 226);
-    --ButtonTextColor: rgb(246, 246, 246);
-    --ButtonHoverColor: rgb(127, 161, 255);
+    --Accent: rgb(85, 123, 226);
+    --AccentTextColor: rgb(246, 246, 246);
+    --AccentHoverColor: rgb(127, 161, 255);
     --HoveredBorderColor: rgb(132, 132, 132);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
     --ButtonBorderRadius: 20px;
@@ -74,14 +74,14 @@
     width: 100%;
     margin-left: -8px;
     border-radius: var(--ButtonBorderRadius);
-    background-color: var(--ButtonBackgroundColor);
-    color: var(--ButtonTextColor) !important;
+    background-color: var(--Accent);
+    color: var(--AccentTextColor) !important;
     border: solid transparent;
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
 .left-col-list .rbx-upgrade-now .btn-growth-md:hover {
-    background-color: var(--ButtonHoverColor) !important;
+    background-color: var(--Accent) !important;
     border: solid transparent;
 }
 
@@ -145,14 +145,14 @@
 
 .btn-growth-sm, .btn-primary-md, .btn-control-small {
     border-radius: var(--ButtonBorderRadius) !important;
-    background-color: var(--ButtonBackgroundColor) !important;
+    background-color: var(--Accent) !important;
     border: none !important;
-    color: var(--ButtonTextColor) !important;
+    color: var(--AccentTextColor) !important;
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
 .btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover {
-    background-color: var(--ButtonHoverColor) !important;
+    background-color: var(--Accent) !important;
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
@@ -178,7 +178,7 @@
 
 .game-card-container button:not(.experience-events-tile *) { /* RoPro exclusive to be honest but whatever! */
     border-radius: calc(100% / 2) !important;
-    background-color: var(--ButtonBackgroundColor) !important;
+    background-color: var(--Accent) !important;
 }
 
 .game-card-thumb-container, .brief-game-icon {
