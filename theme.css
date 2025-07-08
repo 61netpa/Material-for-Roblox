@@ -147,6 +147,11 @@
     background-color: var(--ButtonBackgroundColor) !important;
     border: none !important;
     color: var(--ButtonTextColor) !important;
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover {
+    background-color: var(--ButtonHoverColor) !important;
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
