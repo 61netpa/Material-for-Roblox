@@ -139,6 +139,18 @@
     background-color: var(--DropdownMenuBackgroundColor) !important;
 }
 
+.friend-tile-dropdown-button {
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.friend-tile-dropdown-button span { /* This was very unintentional but it looks AWESOME! */
+    transition: background-position 250ms var(--CubicBezierAnimation);
+}
+
+.friend-tile-dropdown-button:has(.icon.icon-viewdetails) {
+    border-radius: 0 0 8px 8px;
+}
+
 .MuiButtonBase-root {
     border-radius: var(--ButtonBorderRadius);
 }
