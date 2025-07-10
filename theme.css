@@ -245,6 +245,11 @@
     transition: box-shadow 250ms var(--CubicBezierAnimation)
 }
 
+.rbx-tabs-horizontal.roblox-messages-container {
+    border-radius: 18px;
+    background-color: var(--ContentBackgroundColor) !important;
+}
+
 .friends-carousel-tile > button > a { /* Seems like Roblox doesn't know how to center the "Add Friends" button in the home page. */
     display: flex;
     flex-direction: column;
@@ -271,6 +276,10 @@
     margin: 0;
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 0 0 18px 18px;
+}
+
+.roblox-messages-container .tab-content.rbx-tab-content {
+    background-color: transparent !important;
 }
 
 .tab-content.rbx-tab-content .hlist.game-cards {
