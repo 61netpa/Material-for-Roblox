@@ -80,7 +80,7 @@
     border-width: 0 0 1px !important;
 }
 
-.container-main, .content, .container-footer, .table.summary, .catalog-header {
+.container-main, .content, .container-footer, .table.summary, .catalog-header, .topic-container, .search-bars {
     background-color: var(--MainBackgroundColor) !important;
 }
 
