@@ -280,6 +280,7 @@
     margin: 0;
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 0 0 18px 18px;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
 .roblox-messages-container .tab-content.rbx-tab-content {
