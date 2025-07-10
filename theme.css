@@ -199,8 +199,7 @@
 }
 
 .game-card-container .ropro-card-quick-play-options { /* RoPro exclusive */
-    opacity: 1;
-    transition: right 250ms var(--CubicBezierAnimation) !important;
+    transition: right 250ms var(--CubicBezierAnimation), opacity 250ms var(--CubicBezierAnimation) !important;
 }
 
 .game-card-container button:not(.experience-events-tile *) { /* RoPro exclusive */
