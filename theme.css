@@ -113,6 +113,10 @@
     animation: opacity-anim 250ms var(--CubicBezierAnimation), dropdown-menu-anim 250ms var(--CubicBezierAnimation);
 }
 
+.tab-horizontal-submenu.section-content.six-column {
+    padding: 0 0 3px 0 !important;
+}
+
 .game-details-carousel-container {
     border-radius: var(--ImageBorderRadius) !important;
 }
@@ -270,6 +274,11 @@
 
 .profile-avatar-mask {
     padding: 20px 11px !important;
+}
+
+.text.ng-binding.ng-scope {
+    border-radius: var(--ButtonBorderRadius) !important;
+    transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
 @keyframes border-appear {
