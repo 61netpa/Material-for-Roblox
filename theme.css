@@ -308,6 +308,21 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
+.roblox-message-row, .message-news {
+    border: transparent;
+    border-radius: 16px;
+}
+
+.roblox-messages-container .messages, .messages.notification-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.roblox-messages-container .section-content-off {
+    background-color: transparent;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
