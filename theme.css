@@ -40,6 +40,10 @@
     --SelectedBorderColor: rgb(50, 51, 57);
 }
 
+.dark-theme, .light-theme {
+    background-color: var(--MainBackgroundColor);
+}
+
 .rbx-left-col {
     background-color: var(--NavbarBackgroundColor) !important;
 }
@@ -76,11 +80,7 @@
     border-width: 0 0 1px !important;
 }
 
-.container-main {
-    background-color: var(--MainBackgroundColor) !important;
-}
-
-.content, .container-footer {
+.container-main, .content, .container-footer, .table.summary, .catalog-header {
     background-color: var(--MainBackgroundColor) !important;
 }
 
