@@ -90,6 +90,10 @@
     padding: 8px 0 0 8px !important;
 }
 
+.profile-container .section-content {
+    padding: 8px !important;
+}
+
 .section-content.remove-panel {
     left: -5px !important;
     padding: 10px 5px !important;
@@ -322,6 +326,10 @@
 
 .roblox-messages-container .section-content-off {
     background-color: transparent;
+}
+
+.profile-container .web-blox-css-mui-16xdy8q {
+    background-color: transparent !important;
 }
 
 @keyframes border-appear {
