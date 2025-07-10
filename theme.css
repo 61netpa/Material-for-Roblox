@@ -336,6 +336,25 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
+.assets-explorer-main-content .tab-content.rbx-tab-content {
+    border-radius: 18px;
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs {
+    position: relative;
+    background-color: var(--ContentBackgroundColor) !important;
+    left: -10px;
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus {
+    margin-right: 0;
+    background-color: transparent !important;
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content {
+    transition: box-shadow 250ms var(--CubicBezierAnimation);
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
