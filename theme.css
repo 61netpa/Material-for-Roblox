@@ -169,7 +169,7 @@
     border: solid transparent !important;
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
     background-color: var(--AccentHoverColor) !important;
 }
 
