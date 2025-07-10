@@ -105,6 +105,13 @@
     padding: 8px 0 0 8px !important;
 }
 
+.section-content.remove-panel {
+    left: -5px !important;
+    padding: 10px 5px !important;
+    width: 100%;
+    box-sizing: content-box;
+}
+
 .tab-horizontal-submenu.section-content {
     border-radius: 0 0 18px 18px !important;
     border-top: solid transparent;
