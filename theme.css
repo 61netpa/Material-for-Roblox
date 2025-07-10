@@ -70,21 +70,6 @@
     width: 160px;
 }
 
-.left-col-list .rbx-upgrade-now .btn-growth-md {
-    width: 100%;
-    margin-left: -8px;
-    border-radius: var(--ButtonBorderRadius);
-    background-color: var(--Accent);
-    color: var(--AccentTextColor) !important;
-    border: solid transparent;
-    transition: background-color 250ms var(--CubicBezierAnimation);
-}
-
-.left-col-list .rbx-upgrade-now .btn-growth-md:hover {
-    background-color: var(--AccentHoverColor) !important;
-    border: solid transparent;
-}
-
 .navbar-fixed-top {
     background-color: var(--NavbarBackgroundColor) !important;
     border: solid transparent !important;
@@ -158,7 +143,7 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .web-blox-css-tss-lo77dr-Button-contained {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .web-blox-css-tss-lo77dr-Button-contained {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
@@ -166,8 +151,18 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
+.left-col-list .rbx-upgrade-now .btn-growth-md {
+    width: 100%;
+    margin-left: -8px;
+    border: solid transparent !important;
+}
+
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
     background-color: var(--AccentHoverColor) !important;
+}
+
+.left-col-list .rbx-upgrade-now .btn-growth-md:hover {
+    border: solid transparent;
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
