@@ -198,7 +198,12 @@
     transition: height 250ms var(--CubicBezierAnimation), width 250ms var(--CubicBezierAnimation); /* Width too because BTR can change the chat button's width. */
 }
 
-.game-card-container button:not(.experience-events-tile *) { /* RoPro exclusive to be honest but whatever! */
+.game-card-container .ropro-card-quick-play-options { /* RoPro exclusive */
+    opacity: 1;
+    transition: right 250ms var(--CubicBezierAnimation) !important;
+}
+
+.game-card-container button:not(.experience-events-tile *) { /* RoPro exclusive */
     border-radius: calc(100% / 2) !important;
     background-color: var(--Accent) !important;
 }
