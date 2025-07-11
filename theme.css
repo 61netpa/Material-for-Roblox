@@ -95,7 +95,7 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.profile-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container { /* BTRoblox exclusive */
+.profile-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container {
     padding: 15px 0 !important;
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 18px;
@@ -350,17 +350,18 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.assets-explorer-main-content .tab-content.rbx-tab-content, .assets-explorer-main-content .menu-vertical-container.category-tabs {
+.assets-explorer-main-content .tab-content.rbx-tab-content, .assets-explorer-main-content .menu-vertical-container.category-tabs, #settings-container .tab-content.rbx-tab-content, #settings-container .menu-vertical {
     border-radius: 18px;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs {
+.assets-explorer-main-content .menu-vertical-container.category-tabs, #settings-container .menu-vertical {
     position: relative;
     background-color: var(--ContentBackgroundColor) !important;
     padding: 0;
     left: -10px;
     overflow: hidden;
+    padding: 15px 0;
 }
 
 .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus {
@@ -368,15 +369,15 @@
     background-color: transparent !important;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content, #settings-container .menu-vertical .menu-option-content, #settings-container .menu-vertical .menu-option {
     transition: box-shadow 250ms var(--CubicBezierAnimation);
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option:not(.active):hover, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content:hover {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option:not(.active):hover, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content:hover, #settings-container .menu-vertical .menu-option-content:not(.active):hover, #settings-container .menu-vertical .menu-option:not(:has(.active)):hover {
     box-shadow: inset 2px 0 var(--HoveredBorderColor);
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active, #settings-container .menu-vertical .menu-option-content.active {
     box-shadow: inset 4px 0 var(--SelectedBorderColor) !important;
 }
 
