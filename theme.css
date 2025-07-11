@@ -324,7 +324,7 @@
     padding: 0 12px;
 }
 
-.roblox-messages-container .section-content-off {
+.roblox-messages-container .section-content-off, .assets-explorer-main-content .section-content-off {
     background-color: transparent;
 }
 
@@ -336,14 +336,17 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.assets-explorer-main-content .tab-content.rbx-tab-content {
+.assets-explorer-main-content .tab-content.rbx-tab-content, .assets-explorer-main-content .menu-vertical-container.category-tabs {
     border-radius: 18px;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
 .assets-explorer-main-content .menu-vertical-container.category-tabs {
     position: relative;
     background-color: var(--ContentBackgroundColor) !important;
+    padding: 0;
     left: -10px;
+    overflow: hidden;
 }
 
 .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus {
@@ -351,8 +354,24 @@
     background-color: transparent !important;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content {
     transition: box-shadow 250ms var(--CubicBezierAnimation);
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option:not(.active):hover, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content:hover {
+    box-shadow: inset 2px 0 var(--HoveredBorderColor);
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active {
+    box-shadow: inset 4px 0 var(--SelectedBorderColor) !important;
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active .menu-option-content:focus, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active .menu-option-content:hover {
+    box-shadow: none;
+}
+
+.assets-explorer-main-content .menu-vertical-container.category-tabs > .ng-binding {
+    padding: 5px 5px;
 }
 
 @keyframes border-appear {
