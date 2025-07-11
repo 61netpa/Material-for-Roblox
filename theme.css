@@ -94,6 +94,10 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
+.section-content.login-section {
+    padding: 8px !important;
+}
+
 .profile-container .btr-profile-container .section-content { /* BTRoblox exclusive */
     padding: 8px !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
@@ -177,7 +181,7 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .web-blox-css-tss-lo77dr-Button-contained {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .web-blox-css-tss-lo77dr-Button-contained {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
@@ -191,7 +195,7 @@
     border: solid transparent !important;
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
     background-color: var(--AccentHoverColor) !important;
 }
 
