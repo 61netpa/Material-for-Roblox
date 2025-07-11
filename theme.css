@@ -397,6 +397,18 @@
     padding: 5px 5px;
 }
 
+.modal-content, .modal-content .section-content.modal-section {
+    background-color: var(--DropdownMenuBackgroundColor) !important;
+}
+
+.modal-content .section-content.modal-section {
+    padding: 0 !important;
+}
+
+.modal-content .section-content.modal-section .account-selection {
+    border-radius: var(--ButtonBorderRadius);
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
