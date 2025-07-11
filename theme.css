@@ -90,7 +90,7 @@
     padding: 8px 0 0 8px !important;
 }
 
-.profile-container .section-content {
+.profile-container .btr-profile-container .section-content { /* BTRoblox exclusive */
     padding: 8px !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
