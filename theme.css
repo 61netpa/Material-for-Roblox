@@ -92,6 +92,15 @@
 
 .profile-container .section-content {
     padding: 8px !important;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+}
+
+.profile-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container { /* BTRoblox exclusive */
+    padding: 15px 0 !important;
+    background-color: var(--ContentBackgroundColor) !important;
+    border-radius: 18px;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+    margin-bottom: 18px;
 }
 
 .section-content.remove-panel {
