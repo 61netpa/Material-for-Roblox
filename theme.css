@@ -84,7 +84,7 @@
     background-color: var(--MainBackgroundColor) !important;
 }
 
-.section-content {
+.section-content, .profile-container .profile-game .game-grid {
     border-radius: 18px !important;
     background-color: var(--ContentBackgroundColor) !important;
     padding: 8px 0 0 8px !important;
@@ -407,6 +407,14 @@
 
 .modal-content .section-content.modal-section .account-selection {
     border-radius: var(--ButtonBorderRadius);
+}
+
+.profile-container .btr-game-button {
+    border-radius: 18px;
+}
+
+.profile-container .profile-game .game-grid {
+    background-color: var(--ContentBackgroundColor);
 }
 
 @keyframes border-appear {
