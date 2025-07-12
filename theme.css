@@ -195,6 +195,16 @@
     border: solid transparent !important;
 }
 
+.btn-control-xs:not(.rbx-public-game-server-item *) {
+    padding: 10px !important;
+    display: flex;
+    gap: 5px;
+}
+
+.btn-control-xs:not(.rbx-public-game-server-item *):after {
+    position: relative;
+}
+
 .btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
     background-color: var(--AccentHoverColor) !important;
 }
