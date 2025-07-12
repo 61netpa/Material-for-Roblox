@@ -84,7 +84,7 @@
     background-color: var(--MainBackgroundColor) !important;
 }
 
-.section-content, .profile-container .profile-game .game-grid {
+.section-content, .profile-container .profile-game .game-grid, .group-details .group-profile-header {
     border-radius: 18px !important;
     background-color: var(--ContentBackgroundColor) !important;
     padding: 8px 0 0 8px !important;
@@ -415,6 +415,18 @@
 
 .profile-container .profile-game .game-grid {
     background-color: var(--ContentBackgroundColor);
+}
+
+.group-details .rbx-tabs-horizontal {
+    margin: 0;
+}
+
+.group-details .tab-content.rbx-tab-content {
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+}
+
+.group-details .group-profile-header {
+    border-radius: 18px !important
 }
 
 @keyframes border-appear {
