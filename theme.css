@@ -363,7 +363,7 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs, #settings-container .menu-vertical {
+.assets-explorer-main-content .menu-vertical-container.category-tabs, #settings-container .menu-vertical, #group-container .menu-vertical-container {
     position: relative;
     background-color: var(--ContentBackgroundColor) !important;
     padding: 0;
@@ -372,24 +372,33 @@
     padding: 15px 0;
 }
 
+#group-container .menu-vertical-container {
+    border-radius: 18px;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+}
+
+#group-container .menu-vertical-container .menu-vertical {
+    background-color: transparent;
+}
+
 .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus {
     margin-right: 0;
     background-color: transparent !important;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content, #settings-container .menu-vertical .menu-option-content, #settings-container .menu-vertical .menu-option {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content, #settings-container .menu-vertical .menu-option-content, #settings-container .menu-vertical .menu-option, #group-container .menu-vertical-container .menu-vertical .menu-option, #group-container .menu-vertical-container .menu-vertical .menu-option .menu-option-content {
     transition: box-shadow 250ms var(--CubicBezierAnimation);
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option:not(.active):hover, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content:hover, #settings-container .menu-vertical .menu-option-content:not(.active):hover, #settings-container .menu-vertical .menu-option:not(:has(.active)):hover {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option:not(.active):hover, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content:hover, #settings-container .menu-vertical .menu-option-content:not(.active):hover, #settings-container .menu-vertical .menu-option:not(:has(.active)):hover, .menu-vertical-container .menu-vertical .menu-option:not(:has(.active)):hover {
     box-shadow: inset 2px 0 var(--HoveredBorderColor);
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active, #settings-container .menu-vertical .menu-option-content.active {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active, #settings-container .menu-vertical .menu-option-content.active, .menu-vertical-container .menu-vertical .menu-option.active, #group-container .menu-vertical-container .menu-vertical .menu-option.active .menu-option-content {
     box-shadow: inset 4px 0 var(--SelectedBorderColor) !important;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active .menu-option-content:focus, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active .menu-option-content:hover {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active .menu-option-content:focus, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active .menu-option-content:hover, #group-container .menu-vertical-container .menu-vertical .menu-option .menu-option-content:hover {
     box-shadow: none;
 }
 
