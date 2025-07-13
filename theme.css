@@ -191,6 +191,10 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
+.btn-secondary-md {
+    border-radius: var(--ButtonBorderRadius) !important;
+}
+
 .left-col-list .rbx-upgrade-now .btn-growth-md {
     width: 100%;
     margin-left: -8px;
