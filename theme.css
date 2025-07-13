@@ -170,7 +170,7 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
-.friend-tile-dropdown-button span { /* This was very unintentional but it looks AWESOME! */
+.friend-tile-dropdown-button span, .left-col-list span  { /* This was very unintentional but it looks AWESOME! */
     transition: background-position 250ms var(--CubicBezierAnimation);
 }
 
