@@ -451,7 +451,7 @@
     border-radius: 18px !important
 }
 
-.card-item.card-item-public-server {
+.card-item.card-item-public-server, .card-item-private-server {
     background-color: var(--ServerCardBackgroundColor) !important;
     border-radius: 18px;
 }
