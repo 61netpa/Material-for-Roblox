@@ -468,6 +468,10 @@
     border-radius: 18px;
 }
 
+.profile-container .profile-view-selector {
+    border-radius: var(--ButtonBorderRadius);
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
