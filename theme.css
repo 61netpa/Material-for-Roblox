@@ -26,7 +26,7 @@
     --DropdownShadowColor: hsl(none 0% 0% / 0.16);
     --BottomBorderColor: rgb(58, 60, 65);
     --SelectedBorderColor: rgb(250, 250, 250);
-    --ServerCardBackgroundColor: rgb(42, 43, 47);
+    --ContentCardBackgroundColor: rgb(42, 43, 47);
 }
 
 .light-theme {
@@ -39,7 +39,7 @@
     --DropdownShadowColor: hsl(0, 0%, 0%, 0.28);
     --BottomBorderColor: rgb(226, 226, 228);
     --SelectedBorderColor: rgb(50, 51, 57);
-    --ServerCardBackgroundColor: rgb(249, 249, 249);
+    --ContentCardBackgroundColor: rgb(249, 249, 249);
 }
 
 .dark-theme, .light-theme {
@@ -463,8 +463,8 @@
     border-radius: 18px !important
 }
 
-.card-item.card-item-public-server, .card-item-private-server {
-    background-color: var(--ServerCardBackgroundColor) !important;
+.card-item.card-item-public-server, .card-item-private-server, .group-section-content.shout-container, .group-details .comment.list-item {
+    background-color: var(--ContentCardBackgroundColor) !important;
     border-radius: 18px;
 }
 
