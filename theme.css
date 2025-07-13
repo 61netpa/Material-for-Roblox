@@ -197,13 +197,14 @@
     border: solid transparent !important;
 }
 
-.btn-control-xs:not(.rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames) {
+.btn-control-xs:not(.rbx-public-game-server-item-container .rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames) {
     padding: 10px !important;
     display: flex;
+    justify-content: center;
     gap: 5px;
 }
 
-.btn-control-xs:not(.rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames):after {
+.btn-control-xs:not(.rbx-public-game-server-item-container .rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames):after {
     position: relative;
 }
 
