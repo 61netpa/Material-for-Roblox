@@ -231,6 +231,8 @@
 .dropdown-menu, .popover-content {
     transform-origin: top;
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+    border-radius: 18px;
 }
 
 .dropdown-menu {
@@ -470,6 +472,26 @@
 
 .profile-container .profile-view-selector {
     border-radius: var(--ButtonBorderRadius);
+}
+
+.notification-stream-base .notification-content-view {
+    border-radius: 18px !important;
+}
+
+.notification-stream-base .notification-content-view .notification-stream-header {
+    border-radius: 18px 18px 0 0;
+}
+
+.notification-stream-base .notification-content-view .notification-stream-body {
+    border-radius: 0 0 18px 18px;
+}
+
+.notification-stream-base .notification-content-view .notification-stream-body .notification-stream-loading, .notification-stream-base .notification-content-view .notification-stream-body .container-empty {
+    background-color: var(--DropdownMenuBackgroundColor) !important;
+}
+
+.notification-stream-base .notification-content-view .notification-stream-body .notification-stream-banner {
+    display: none;
 }
 
 @keyframes border-appear {
