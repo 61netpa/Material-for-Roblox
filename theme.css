@@ -92,6 +92,10 @@
     padding: 8px 0 0 8px !important;
 }
 
+.group-details .group-profile-header {
+    padding: 8px !important;
+}
+
 .section-content:has(.game-main-content) {
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
