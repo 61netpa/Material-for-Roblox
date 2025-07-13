@@ -321,6 +321,10 @@
     border-radius: 0 0 18px 18px;
 }
 
+.assets-explorer-main-content .tab-content.rbx-tab-content {
+    padding: 20px 12px 0;
+}
+
 .roblox-messages-container .tab-content.rbx-tab-content {
     background-color: transparent !important;
 }
