@@ -512,6 +512,11 @@
     border: 1px solid transparent;
 }
 
+.friends-content.section .avatar-card-container, .friends-content.section .avatar-card-container .avatar-card-btns {
+    border-radius: 18px !important;
+    background-color: var(--PopoutBackgroundColor) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
