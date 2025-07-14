@@ -373,7 +373,7 @@
     padding: 0 12px;
 }
 
-.roblox-messages-container .section-content-off, .assets-explorer-main-content .section-content-off {
+.section-content-off {
     background-color: transparent;
 }
 
