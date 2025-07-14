@@ -187,7 +187,7 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .web-blox-css-tss-lo77dr-Button-contained {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .web-blox-css-tss-lo77dr-Button-contained {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
@@ -216,7 +216,7 @@
     position: relative;
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .foundation-web-button:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
     background-color: var(--AccentHoverColor) !important;
 }
 
@@ -492,6 +492,10 @@
 
 .notification-stream-base .notification-content-view .notification-stream-body .notification-stream-banner {
     display: none;
+}
+
+.web-blox-css-tss-1o0wd2v-root, .web-blox-css-tss-1xgqzs8-root {
+    background-color: var(--PopoutBackgroundColor);
 }
 
 @keyframes border-appear {
