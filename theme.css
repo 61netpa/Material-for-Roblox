@@ -517,6 +517,14 @@
     background-color: var(--PopoutBackgroundColor) !important;
 }
 
+#friends-web-app .nav.nav-tabs .rbx-tab:hover .rbx-tab-heading:not(.active) {
+    box-shadow: inset 0 -2px var(--HoveredBorderColor) !important;
+}
+
+#friends-web-app .nav.nav-tabs .rbx-tab .rbx-tab-heading.active {
+    box-shadow: inset 0 -4px var(--SelectedBorderColor) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
