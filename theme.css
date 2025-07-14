@@ -294,7 +294,7 @@
     transition: box-shadow 250ms var(--CubicBezierAnimation)
 }
 
-.rbx-tabs-horizontal.roblox-messages-container {
+.rbx-tabs-horizontal.roblox-messages-container, .table.table-striped.transactions {
     border-radius: 18px;
     background-color: var(--ContentBackgroundColor) !important;
 }
@@ -496,6 +496,10 @@
 
 .web-blox-css-tss-1o0wd2v-root, .web-blox-css-tss-1xgqzs8-root {
     background-color: var(--PopoutBackgroundColor);
+}
+
+.table.table-striped.transactions tbody tr:nth-child(2n) > td {
+    background-color: var(--PopoutBackgroundColor) !important;
 }
 
 @keyframes border-appear {
