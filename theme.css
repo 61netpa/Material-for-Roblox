@@ -22,7 +22,7 @@
     --NavbarBackgroundColor: rgb(14, 15, 17);
     --LeftNavbarButtonHoverColor: rgb(43, 45, 49);
     --SearchBarBackgroundColor: rgb(39, 39, 42);
-    --DropdownMenuBackgroundColor: rgb(45, 48, 52);
+    --PopoutBackgroundColor: rgb(45, 48, 52);
     --DropdownShadowColor: hsl(none 0% 0% / 0.16);
     --BottomBorderColor: rgb(58, 60, 65);
     --SelectedBorderColor: rgb(250, 250, 250);
@@ -35,7 +35,7 @@
     --NavbarBackgroundColor: rgb(232, 232, 232);
     --LeftNavbarButtonHoverColor: rgb(218, 219, 221);
     --SearchBarBackgroundColor: rgb(207, 207, 207);
-    --DropdownMenuBackgroundColor: rgb(255, 255, 255);
+    --PopoutBackgroundColor: rgb(255, 255, 255);
     --DropdownShadowColor: hsl(0, 0%, 0%, 0.28);
     --BottomBorderColor: rgb(226, 226, 228);
     --SelectedBorderColor: rgb(50, 51, 57);
@@ -163,7 +163,7 @@
     border-radius: 8px !important;
     transform-origin: top;
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
-    background-color: var(--DropdownMenuBackgroundColor) !important;
+    background-color: var(--PopoutBackgroundColor) !important;
 }
 
 .friend-tile-dropdown-button {
@@ -236,11 +236,11 @@
 }
 
 .dropdown-menu {
-    background-color: var(--DropdownMenuBackgroundColor) !important;
+    background-color: var(--PopoutBackgroundColor) !important;
 }
 
 .popover.bottom > .arrow:after {
-    border-bottom-color: var(--DropdownMenuBackgroundColor) !important;
+    border-bottom-color: var(--PopoutBackgroundColor) !important;
 }
 
 .chat-main {
@@ -434,7 +434,7 @@
 }
 
 .modal-content, .modal-content .section-content.modal-section {
-    background-color: var(--DropdownMenuBackgroundColor) !important;
+    background-color: var(--PopoutBackgroundColor) !important;
 }
 
 .modal-content .section-content.modal-section {
@@ -487,7 +487,7 @@
 }
 
 .notification-stream-base .notification-content-view .notification-stream-body .notification-stream-loading, .notification-stream-base .notification-content-view .notification-stream-body .container-empty {
-    background-color: var(--DropdownMenuBackgroundColor) !important;
+    background-color: var(--PopoutBackgroundColor) !important;
 }
 
 .notification-stream-base .notification-content-view .notification-stream-body .notification-stream-banner {
