@@ -456,6 +456,7 @@
 
 .modal-content .section-content.modal-section .account-selection {
     border-radius: var(--ButtonBorderRadius);
+    background-color: var(--ContentBackgroundColor);
 }
 
 .profile-container .btr-game-button {
