@@ -243,6 +243,14 @@
     background-color: var(--PopoutBackgroundColor) !important;
 }
 
+.dropdown-menu > li {
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.dropdown-menu > li > a {
+    transition: color 250ms var(--CubicBezierAnimation);
+}
+
 .popover.bottom > .arrow:after {
     border-bottom-color: var(--PopoutBackgroundColor) !important;
 }
