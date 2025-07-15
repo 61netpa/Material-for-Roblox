@@ -318,6 +318,10 @@
     justify-content: center;
 }
 
+.friends-carousel-tile .add-friends-icon-container:before {
+    background-color: var(--PopoutBackgroundColor) !important;
+}
+
 .item-card-thumb-container, .item-card-thumb-container:before, .item-card-thumb, .item-card-equipped, .item-card-menu.ng-scope.ng-isolate-scope.active {
     border-radius: 28px !important;
     transition: opacity 250ms var(--CubicBezierAnimation) !important;
