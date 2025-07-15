@@ -447,6 +447,7 @@
 
 .modal-content, .modal-content .section-content.modal-section {
     background-color: var(--PopoutBackgroundColor) !important;
+    border-radius: 18px !important;
 }
 
 .modal-content .section-content.modal-section {
