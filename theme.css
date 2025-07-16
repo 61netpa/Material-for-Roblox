@@ -552,6 +552,11 @@
     border-radius: 18px;
 }
 
+.search-landing-container {
+    border-radius: 0 0 18px 18px;
+    background-color: var(--NavbarBackgroundColor) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
