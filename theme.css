@@ -228,7 +228,7 @@
     animation: border-appear 250ms var(--CubicBezierAnimation);
 }
 
-.dropdown-menu, .popover-content, #avatar-card-dropdown-menu.popover.bottom, .popover {
+.dropdown-menu, .popover-content, #avatar-card-dropdown-menu.popover.bottom {
     transform-origin: top;
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
@@ -546,6 +546,10 @@
 .stack-row.badge-row {
     border-radius: 18px;
     background-color: var(--PopoutBackgroundColor) !important;
+}
+
+.popover {
+    border-radius: 18px;
 }
 
 @keyframes border-appear {
