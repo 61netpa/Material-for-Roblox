@@ -557,6 +557,10 @@
     background-color: var(--NavbarBackgroundColor) !important;
 }
 
+.search-landing-container .spacer {
+    background-color: var(--NavbarBackgroundColor) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
