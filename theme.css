@@ -568,6 +568,15 @@
     border: none;
 }
 
+.screentime-chart-container {
+    border-radius: 18px;
+    background-color: var(--ContentCardBackgroundColor) !important;
+}
+
+.screentime-chart-container .highcharts-background {
+    fill: transparent !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
