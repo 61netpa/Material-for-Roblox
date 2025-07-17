@@ -429,7 +429,7 @@
     background-color: transparent !important;
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content, #settings-container .menu-vertical .menu-option-content, #settings-container .menu-vertical .menu-option, #group-container .menu-vertical-container .menu-vertical .menu-option, #group-container .menu-vertical-container .menu-vertical .menu-option .menu-option-content {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content, #settings-container .menu-vertical .menu-option-content, #settings-container .menu-vertical .menu-option {
     transition: box-shadow 250ms var(--CubicBezierAnimation);
 }
 
@@ -437,7 +437,7 @@
     box-shadow: inset 2px 0 var(--HoveredBorderColor);
 }
 
-.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active, #settings-container .menu-vertical .menu-option-content.active, .menu-vertical-container .menu-vertical .menu-option.active, #group-container .menu-vertical-container .menu-vertical .menu-option.active .menu-option-content {
+.assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option.active, #settings-container .menu-vertical .menu-option-content.active, .menu-vertical-container .menu-vertical .menu-option.active {
     box-shadow: inset 4px 0 var(--SelectedBorderColor) !important;
 }
 
@@ -559,6 +559,13 @@
 
 .search-landing-container .spacer {
     background-color: var(--NavbarBackgroundColor) !important;
+}
+
+.groups-list-sidebar {
+    background-color: var(--ContentBackgroundColor);
+    border-radius: 0 18px 18px 0;
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+    border: none;
 }
 
 @keyframes border-appear {
