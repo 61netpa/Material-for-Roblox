@@ -378,6 +378,7 @@
 }
 
 .roblox-message-row, .message-news {
+    background-color: var(--ContentCardBackgroundColor) !important;
     border: transparent;
     border-radius: 16px;
 }
