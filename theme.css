@@ -568,7 +568,7 @@
     border: none;
 }
 
-.screentime-chart-container {
+.screentime-chart-container, #settings-container .group-wrapper.group-open {
     border-radius: 18px;
     background-color: var(--ContentCardBackgroundColor) !important;
 }
