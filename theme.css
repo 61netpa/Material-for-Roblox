@@ -187,7 +187,7 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .web-blox-css-tss-lo77dr-Button-contained {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .web-blox-css-tss-lo77dr-Button-contained {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
@@ -216,7 +216,7 @@
     position: relative;
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .foundation-web-button:hover, .btn-cta-md:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .foundation-web-button:hover, .btn-cta-md:hover, .btn-control-lg:hover, .web-blox-css-tss-lo77dr-Button-contained:hover {
     background-color: var(--AccentHoverColor) !important;
 }
 
