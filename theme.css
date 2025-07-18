@@ -536,11 +536,11 @@
     background-color: var(--PopoutBackgroundColor) !important;
 }
 
-#friends-web-app .nav.nav-tabs .rbx-tab:hover .rbx-tab-heading:not(.active) {
+#friends-web-app .nav.nav-tabs .rbx-tab:hover .rbx-tab-heading:not(.active), #private-message-web-app .nav.nav-tabs .rbx-tab:not(.active):hover .rbx-tab-heading {
     box-shadow: inset 0 -2px var(--HoveredBorderColor) !important;
 }
 
-#friends-web-app .nav.nav-tabs .rbx-tab .rbx-tab-heading.active {
+#friends-web-app .nav.nav-tabs .rbx-tab .rbx-tab-heading.active, #private-message-web-app .nav.nav-tabs .rbx-tab.active .rbx-tab-heading {
     box-shadow: inset 0 -4px var(--SelectedBorderColor) !important;
 }
 
