@@ -600,6 +600,10 @@
     border-radius: 18px !important;
 }
 
+.dropdown-toggle {
+    border-radius: 18px !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
