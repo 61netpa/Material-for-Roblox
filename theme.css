@@ -257,6 +257,27 @@
 
 .chat-main {
     transition: height 250ms var(--CubicBezierAnimation), width 250ms var(--CubicBezierAnimation); /* Width too because BTR can change the chat button's width. */
+    border-radius: 18px 18px 0 0;
+    background-color: var(--PopoutBackgroundColor) !important;
+}
+
+.chat-main .chat-windows-header {
+    border-radius: 18px 18px 0 0;
+    background-color: var(--NavbarBackgroundColor) !important;
+}
+
+.chat-main .chat-search, .chat-main .chat-search input {
+    background-color: var(--SearchBarBackgroundColor) !important;
+    border-radius: 0 !important;
+}
+
+.chat-main .chat-friend-container {
+    border-radius: 28px;
+    transition: background-color 250ms var(--CubicBezierAnimation), color 250ms var(--CubicBezierAnimation);
+}
+
+.chat-main .chat-friend-container .border-bottom {
+    border: none !important;
 }
 
 .game-card-container .ropro-card-quick-play-options { /* RoPro exclusive */
