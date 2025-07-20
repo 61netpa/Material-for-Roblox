@@ -276,6 +276,10 @@
     transition: background-color 250ms var(--CubicBezierAnimation), color 250ms var(--CubicBezierAnimation);
 }
 
+.chat-main .chat-friend-container .chat-conversation-universe .thumbnail-2d-container, .chat-main .chat-friend-container .chat-conversation-universe .thumbnail-2d-container img {
+    border-radius: var(--ImageBorderRadius);
+}
+
 .chat-main .chat-friend-container .border-bottom {
     border: none !important;
 }
