@@ -603,6 +603,16 @@
     fill: transparent !important;
 }
 
+.screentime-chart-container .highcharts-point {
+    fill: var(--Accent) !important;
+    transition: fill 250ms var(--CubicBezierAnimation) !important;
+}
+
+.screentime-chart-container .highcharts-point-hover {
+    fill: var(--AccentHoverColor) !important;
+    fill-opacity: 1;
+}
+
 #settings-container .group-wrapper {
     border-radius: 18px;
     transition: background-color 250ms var(--CubicBezierAnimation);
