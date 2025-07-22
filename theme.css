@@ -639,6 +639,14 @@
     border-radius: 18px !important;
 }
 
+.gender-button:has(.icon-female) {
+    border-radius: 0 18px 18px 0;
+}
+
+.gender-button:has(.icon-male) {
+    border-radius: 18px 0 0 18px;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
