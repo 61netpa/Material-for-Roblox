@@ -159,6 +159,10 @@
     transform: scale(1.1);
 }
 
+.friend-tile-dropdown {
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+}
+
 .friend-tile-dropdown, .web-blox-css-mui-hjn929.MuiPaper-elevation {
     border-radius: 8px !important;
     transform-origin: top;
