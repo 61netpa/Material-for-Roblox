@@ -655,6 +655,15 @@
     border-radius: 18px;
 }
 
+.scroll-arrow {
+    background-color: var(--Accent) !important;
+    transition: opacity 250ms var(--CubicBezierAnimation), background-color 250ms var(--CubicBezierAnimation);
+}
+
+.scroll-arrow:hover {
+    background-color: var(--AccentHoverColor) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
