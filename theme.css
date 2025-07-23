@@ -587,6 +587,10 @@
     background-color: var(--NavbarBackgroundColor) !important;
 }
 
+.horizontal-scroller .spacer {
+    background-color: var(--MainBackgroundColor) !important;
+}
+
 .search-landing-container .spacer {
     background-color: var(--NavbarBackgroundColor) !important;
 }
