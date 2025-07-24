@@ -144,7 +144,7 @@
     background-color: transparent !important;
 }
 
-.form-control {
+.form-control, .sandbox-search {
     border-radius: 16px !important;
     border: solid transparent !important;
     background-color: var(--SearchBarBackgroundColor) !important;
@@ -336,7 +336,7 @@
 .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading {
     background-color: rgba(0, 0, 0, 0) !important;
     box-shadow: none !important;
-    transition: box-shadow 250ms var(--CubicBezierAnimation)
+    transition: box-shadow 250ms var(--CubicBezierAnimation);
 }
 
 .rbx-tabs-horizontal.roblox-messages-container, .table.table-striped.transactions {
@@ -647,7 +647,7 @@
     border-radius: 18px !important;
 }
 
-.dropdown-toggle {
+.dropdown-toggle, #sandbox .category-options {
     border-radius: 18px !important;
 }
 
@@ -670,6 +670,29 @@
 
 .scroll-arrow:hover {
     background-color: var(--AccentHoverColor) !important;
+}
+
+#sandbox .catalog-tabs { /* RoPro exclusive */
+    display: flex;
+    background-color: var(--ContentBackgroundColor) !important;
+    border-radius: 18px;
+    border-bottom: 1px solid var(--BottomBorderColor);
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+#sandbox .catalog-tabs .catalog-tab { /* RoPro exclusive */
+    transition: border-bottom 250ms var(--CubicBezierAnimation);
+    border-bottom: solid transparent;
+}
+
+#sandbox .catalog-tabs .catalog-tab:hover { /* RoPro exclusive */
+    border-bottom: 1px solid var(--HoveredBorderColor) !important;
+}
+
+#sandbox .catalog-tabs .catalog-tab.active { /* RoPro exclusive */
+    border-bottom: 2px solid var(--SelectedBorderColor) !important;
 }
 
 @keyframes border-appear {
