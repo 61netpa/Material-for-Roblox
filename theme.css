@@ -213,7 +213,7 @@
     border: solid transparent !important;
 }
 
-.btn-control-xs:not(.rbx-public-game-server-item-container .rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames) {
+.btn-control-xs:not(.rbx-public-game-server-item-container .rbx-public-game-server-item *, .rbx-friends-game-server-item-container .rbx-friends-game-server-item *, .profile-view-selector, .btn-pastnames) {
     padding: 10px !important;
     display: flex;
     justify-content: center;
@@ -517,7 +517,7 @@
     border-radius: 18px !important
 }
 
-.card-item.card-item-public-server, .card-item-private-server, .group-section-content.shout-container, .group-details .comment.list-item {
+.card-item.card-item-public-server, .card-item-private-server, .group-section-content.shout-container, .group-details .comment.list-item, .card-item.card-item-friends-server {
     background-color: var(--ContentCardBackgroundColor) !important;
     border-radius: 18px;
 }
