@@ -241,6 +241,7 @@
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     border-radius: 18px;
+    scrollbar-width: none;
 }
 
 #avatar-card-dropdown-menu.popover.bottom {
