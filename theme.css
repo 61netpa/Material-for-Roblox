@@ -346,7 +346,7 @@
 }
 
 .rbx-tabs-horizontal.roblox-messages-container {
-    padding: 0 0 6px;
+    padding-bottom: 6px;
 }
 
 .friends-carousel-tile > button > a { /* Seems like Roblox doesn't know how to center the "Add Friends" button in the home page. */
