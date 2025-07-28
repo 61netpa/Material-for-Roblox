@@ -7,7 +7,7 @@
     --AccentHoverColor: rgb(127, 161, 255);
     --HoveredBorderColor: rgb(132, 132, 132);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
-    --ButtonBorderRadius: 20px;
+    --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RoundBorderRadius: calc(100% / 2);
 }
