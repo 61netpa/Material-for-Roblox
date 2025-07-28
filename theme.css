@@ -260,7 +260,7 @@
     transition: color 250ms var(--CubicBezierAnimation);
 }
 
-.popover.bottom > .arrow:after {
+.popover.bottom:not(:has(.notification-stream-header)) > .arrow:after {
     border-bottom-color: var(--PopoutBackgroundColor) !important;
 }
 
