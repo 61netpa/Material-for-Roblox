@@ -270,12 +270,16 @@
     background-color: var(--PopoutBackgroundColor) !important;
 }
 
-.chat-main .chat-windows-header {
+.chat-windows-header {
     border-radius: 18px 18px 0 0;
     background-color: var(--NavbarBackgroundColor) !important;
 }
 
-.chat-main .chat-search, .chat-main .chat-search input {
+.dialog-main .dialog-input-container {
+    border: transparent;
+}
+
+.chat-main .chat-search, .chat-main .chat-search input, .dialog-main .dialog-input {
     background-color: var(--SearchBarBackgroundColor) !important;
     border-radius: 0 !important;
 }
@@ -291,6 +295,22 @@
 
 .chat-main .chat-friend-container .border-bottom {
     border: none !important;
+}
+
+.dialog-main .dialog-body {
+    background-color: var(--PopoutBackgroundColor) !important;
+}
+
+.dialog-main .osa-context-card-content {
+    background-color: var(--ContentCardBackgroundColor) !important;
+}
+
+.dialog-container {
+    background-color: transparent !important;
+}
+
+.dialog-container .alert-info {
+    display: none;
 }
 
 .game-card-container .ropro-card-quick-play-options { /* RoPro exclusive */
