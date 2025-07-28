@@ -701,6 +701,22 @@
     border-bottom: 2px solid var(--SelectedBorderColor) !important;
 }
 
+.subscription-container-base > div:not(.premium-title-section), .subscription-container-base .title-anchor-container {
+    background-color: var(--ContentBackgroundColor) !important;
+}
+
+.subscription-container-base .premium-title-section {
+    border-radius: 18px 18px 0 0;
+}
+
+.subscription-container-base .membership-section {
+    border-radius: 0 0 18px 18px;
+}
+
+.subscription-container-base .membership-section .benefits-detail-container {
+    background-color: var(--ContentCardBackgroundColor) !important;
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
