@@ -523,7 +523,7 @@
     border-radius: 18px !important
 }
 
-.card-item.card-item-public-server, .card-item-private-server, .group-section-content.shout-container, .group-details .comment.list-item, .card-item.card-item-friends-server {
+.card-item.card-item-public-server, .card-item-private-server, .group-section-content.shout-container, .group-details .comment.list-item, .card-item.card-item-friends-server, .rbx-public-game-server-item.ropro-checked {
     background-color: var(--ContentCardBackgroundColor) !important;
     border-radius: 18px;
 }
