@@ -469,7 +469,6 @@
 .assets-explorer-main-content .menu-vertical-container.category-tabs, #settings-container .menu-vertical, #group-container .menu-vertical-container {
     position: relative;
     background-color: var(--ContentBackgroundColor) !important;
-    padding: 0;
     left: -10px;
     overflow: hidden;
     padding: 15px 0;
