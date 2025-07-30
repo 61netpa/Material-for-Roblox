@@ -182,11 +182,11 @@
     transition: background-position 250ms var(--CubicBezierAnimation);
 }
 
-.friend-tile-dropdown-button:has(.icon.icon-viewdetails) {
+.friend-tile-dropdown-button:has(.icon-viewdetails) {
     border-radius: 0 0 8px 8px;
 }
 
-.friend-tile-dropdown:not(:has(.in-game-friend-card)) .friend-tile-dropdown-button:has(.icon.icon-chat-gray) {
+.friend-tile-dropdown:not(:has(.in-game-friend-card)) .friend-tile-dropdown-button:has(.icon-chat-gray) {
     border-radius: 8px 8px 0 0;
     border-top: none;
 }
