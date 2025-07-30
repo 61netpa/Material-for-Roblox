@@ -236,7 +236,7 @@
     animation: border-appear 250ms var(--CubicBezierAnimation);
 }
 
-.dropdown-menu, .popover-content, #avatar-card-dropdown-menu.popover.bottom, .search-landing-container, div[id ^= "game-management-dropdown"] {
+.dropdown-menu, .popover-content, #avatar-card-dropdown-menu.popover.bottom, .search-landing-container, div[id ^= "game-management-dropdown"], #catalog-react-container .catalog-revamp .filters-modal-container {
     transform-origin: top;
     animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
@@ -733,6 +733,23 @@
 
 .subscription-container-base .membership-section .benefits-detail-container {
     background-color: var(--ContentCardBackgroundColor) !important;
+}
+
+#catalog-react-container .catalog-revamp .filters-modal-container, #catalog-react-container .catalog-revamp .filters-modal-container .filter-options-container {
+    background-color: var(--PopoutBackgroundColor) !important;
+}
+
+#catalog-react-container .catalog-revamp .filters-modal-container {
+    border: solid transparent !important;
+}
+
+#catalog-react-container .catalog-revamp .filters-modal-container .filter-options-container .filter-option {
+    border-radius: var(--ButtonBorderRadius);
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.icon-radio-check-circle-filled {
+    border: 6px solid var(--Accent) !important;
 }
 
 @keyframes border-appear {
