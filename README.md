@@ -5,27 +5,27 @@
 <p align = "center">
   <h3><details>
     <summary align = "center">Dark Theme</summary>
-    <h5>
-      • Home Page
+    <h5 align = "center">
+      Home Page
       <img src = "preview-files/dark-home.png" alt = "Dark Theme Home Page Preview" style = "width: 100%">
-      • Game Page
+      Game Page
       <img src = "preview-files/dark-game.png" alt = "Dark Theme Game Page Preview" style = "width: 100%">
-      • Friends (Connections) Page
+      Friends (Connections) Page
       <img src = "preview-files/dark-friends.png" alt = "Dark Theme Friends (Connections) Page Preview" style = "width: 100%">
-      • Profile Page
+      Profile Page
       <img src = "preview-files/dark-profile.png" alt = "Dark Theme Profile Page Preview" style = "width: 100%">
     </h5>
   </details>
   <details>
     <summary align = "center">Light Theme</summary>
-    <h5>
-      • Home Page
+    <h5 align = "center">
+      Home Page
       <img src = "preview-files/light-home.png" alt = "Light Theme Home Page Preview" style = "width: 100%">
-      • Game Page
+      Game Page
       <img src = "preview-files/light-game.png" alt = "Light Theme Game Page Preview" style = "width: 100%">
-      • Friends (Connections) Page
+      Friends (Connections) Page
       <img src = "preview-files/light-friends.png" alt = "Light Theme Friends (Connections) Page Preview" style = "width: 100%">
-      • Profile Page
+      Profile Page
       <img src = "preview-files/light-profile.png" alt = "Light Theme Profile Page Preview" style = "width: 100%">
     </h5>
   </details></h3>
