@@ -86,7 +86,7 @@
     background-color: var(--MainBackgroundColor) !important;
 }
 
-.section-content, .profile-container .profile-game .game-grid, .group-details .group-profile-header {
+.section-content, .profile-platform-container .profile-game .game-grid, .group-details .group-profile-header {
     border-radius: 18px !important;
     background-color: var(--ContentBackgroundColor) !important;
     padding: 8px 0 0 8px !important;
@@ -104,12 +104,12 @@
     padding: 8px !important;
 }
 
-.profile-container .btr-profile-container .section-content { /* BTRoblox exclusive */
+.profile-platform-container .btr-profile-container .section-content { /* BTRoblox exclusive */
     padding: 8px !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.profile-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container { /* BTRoblox exclusive */
+.profile-platform-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container { /* BTRoblox exclusive */
     padding: 15px 0 !important;
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 18px;
@@ -339,7 +339,7 @@
     border-radius: var(--ButtonBorderRadius) !important;
 }
 
-.rbx-tabs-horizontal .nav-tabs {
+.rbx-tabs-horizontal .nav-tabs, .profile-tabs {
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 18px 18px 0 0;
     border-bottom: 1px solid var(--BottomBorderColor);
@@ -394,11 +394,16 @@
     padding: 0 12px;
 }
 
-.tab-content.rbx-tab-content {
+.tab-content.rbx-tab-content, .profile-tab-content {
     padding: 6px 12px;
     margin: 0;
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 0 0 18px 18px;
+}
+
+.content:has(.profile-container) {
+    padding: 12px;
+    border-radius: 18px !important;
 }
 
 .assets-explorer-main-content .tab-content.rbx-tab-content {
@@ -453,7 +458,7 @@
     background-color: transparent !important;
 }
 
-.profile-container .web-blox-css-mui-16xdy8q, .profile-container .web-blox-css-mui-1ux7oer {
+.profile-platform-container .web-blox-css-mui-16xdy8q, .profile-platform-container .web-blox-css-mui-1ux7oer {
     background-color: transparent !important;
 }
 
@@ -522,11 +527,11 @@
     background-color: var(--ContentBackgroundColor);
 }
 
-.profile-container .btr-game-button {
+.profile-platform-container .btr-game-button {
     border-radius: 18px;
 }
 
-.profile-container .profile-game .game-grid {
+.profile-platform-container .profile-game .game-grid {
     background-color: var(--ContentBackgroundColor);
 }
 
@@ -547,7 +552,7 @@
     border-radius: 18px;
 }
 
-.profile-container .profile-view-selector {
+.profile-platform-container .profile-view-selector {
     border-radius: var(--ButtonBorderRadius);
 }
 
