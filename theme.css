@@ -757,6 +757,10 @@
     border: 6px solid var(--Accent) !important;
 }
 
+.profile-tabs .profile-tab {
+    transition: box-shadow 250ms var(--CubicBezierAnimation), color 250ms var(--CubicBezierAnimation);
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
