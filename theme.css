@@ -104,13 +104,17 @@
     padding: 8px !important;
 }
 
-.profile-platform-container .btr-profile-container .section-content { /* BTRoblox exclusive */
+.btr-profile-container .section-content { /* BTRoblox exclusive */
     padding: 8px !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.profile-platform-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container { /* BTRoblox exclusive */
-    padding: 15px 0 !important;
+.btr-profile-container #friends-carousel-container {
+    margin-bottom: 30px;
+}
+
+.btr-profile-container .btr-friends-list .friends-carousel-container .friends-carousel-list-container { /* BTRoblox exclusive */
+    padding: 15px 0 0 !important;
     background-color: var(--ContentBackgroundColor) !important;
     border-radius: 18px;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
@@ -458,7 +462,7 @@
     background-color: transparent !important;
 }
 
-.profile-platform-container .web-blox-css-mui-16xdy8q, .profile-platform-container .web-blox-css-mui-1ux7oer {
+.profile-platform-container .web-blox-css-mui-16xdy8q, .profile-platform-container .web-blox-css-mui-1ux7oer, .btr-profile-container .web-blox-css-mui-16xdy8q, .btr-profile-container .web-blox-css-mui-1ux7oer {
     background-color: transparent !important;
 }
 
@@ -527,7 +531,7 @@
     background-color: var(--ContentBackgroundColor);
 }
 
-.profile-platform-container .btr-game-button {
+.btr-profile-container .btr-game-button { /* BTRoblox exclusive */
     border-radius: 18px;
 }
 
@@ -552,7 +556,7 @@
     border-radius: 18px;
 }
 
-.profile-platform-container .profile-view-selector {
+.profile-platform-container .profile-view-selector, .btr-profile-container .profile-view-selector {
     border-radius: var(--ButtonBorderRadius);
 }
 
