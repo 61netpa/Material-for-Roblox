@@ -213,7 +213,7 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
-.btn-secondary-md, .btn-alert-sm, .btn-secondary-sm {
+.btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker {
     border-radius: var(--ButtonBorderRadius) !important;
 }
 
