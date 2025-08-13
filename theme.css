@@ -106,7 +106,7 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.section-content.login-section {
+.section-content.login-section, .section-content:has(.theme-color) {
     padding: 8px !important;
 }
 
