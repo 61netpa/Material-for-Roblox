@@ -604,7 +604,7 @@
     border: 1px solid transparent;
 }
 
-.friends-content.section .avatar-card-container, .friends-content.section .avatar-card-container .avatar-card-btns {
+.friends-content.section .avatar-card-container, .friends-content.section .avatar-card-container .avatar-card-btns, .player-search-page .avatar-card-container, .player-search-page .avatar-card-container .avatar-card-btns {
     border-radius: 18px !important;
     background-color: var(--PopoutBackgroundColor) !important;
 }
