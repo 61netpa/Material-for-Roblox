@@ -327,8 +327,8 @@
     transition: right 250ms var(--CubicBezierAnimation), opacity 250ms var(--CubicBezierAnimation) !important;
 }
 
-.game-card-container button:not(.experience-events-tile *) { /* RoPro exclusive */
-    border-radius: calc(100% / 2) !important;
+.game-card-container button:not(.experience-events-tile *) {
+    border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
 }
 
