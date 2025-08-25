@@ -9,6 +9,7 @@
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
     --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
+    --RadioBoxActiveIconColor: rgb(45, 75, 156);
     --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
@@ -142,12 +143,31 @@
     width: 100%;
 }
 
-.radio-buttons-group.section-content .foundation-web-radio-group > div:has(.foundation-web-radio[aria-checked = true]) {
+.radio-buttons-group.section-content .foundation-web-radio-group > div:has(.foundation-web-radio[ aria-checked = true ]) {
     background-color: var(--RadioBoxActiveBackgroundColor);
 }
 
 .radio-buttons-group.section-content .foundation-web-radio-group > div:hover {
     background-color: var(--RadioBoxHoverBackgroundColor);
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group .foundation-web-radio[ aria-checked = true ] {
+    background-color: var(--RadioBoxActiveIconColor);
+}
+
+.foundation-web-interactable:before {
+    display: none;
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group .foundation-web-radio .foundation-web-radio-indicator:after {
+    background-color: var(--RadioBoxBackgroundColor);
+    transition: background-color 250ms var(--CubicBezierAnimation);
+    height: 12px;
+    width: 12px;
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group .foundation-web-radio[ aria-checked = true ] .foundation-web-radio-indicator:after, .radio-buttons-group.section-content .foundation-web-radio-group > div:hover .foundation-web-radio[ aria-checked = true ] .foundation-web-radio-indicator:after  {
+    background-color: var(--RadioBoxActiveBackgroundColor);
 }
 
 .btr-profile-container .section-content { /* BTRoblox exclusive */
