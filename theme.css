@@ -7,11 +7,12 @@
     --AccentHoverColor: rgb(127, 161, 255);
     --HoveredBorderColor: rgb(132, 132, 132);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
-    --ButtonBorderRadius: calc(Infinity * 1px);
-    --ImageBorderRadius: calc(18px / 1.75);
-    --RoundBorderRadius: calc(100% / 2);
     --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
+    --ButtonBorderRadius: calc(Infinity * 1px);
+    --ImageBorderRadius: calc(18px / 1.75);
+    --RadioBoxBorderRadius: calc(18px / 1.65);
+    --RoundBorderRadius: calc(100% / 2);
 }
 
 * {
@@ -31,6 +32,9 @@
     --ContentCardBackgroundColor: rgb(42, 43, 47);
     --SwitchBackgroundColor: rgb(50, 50, 52);
     --SwitchBorderColor: rgb(120, 120, 120);
+    --RadioBoxBackgroundColor: rgb(31, 32, 35);
+    --RadioBoxHoverBackgroundColor: rgb(38, 39, 41);
+    --RadioBoxActiveBackgroundColor: rgb(60, 61, 64);
 }
 
 .light-theme {
@@ -46,6 +50,9 @@
     --ContentCardBackgroundColor: rgb(249, 249, 249);
     --SwitchBackgroundColor: rgb(207, 207, 207);
     --SwitchBorderColor: rgb(125, 125, 125);
+    --RadioBoxBackgroundColor: rgb(235, 235, 235);
+    --RadioBoxHoverBackgroundColor: rgb(217, 217, 217);
+    --RadioBoxActiveBackgroundColor: rgb(204, 204, 204);
 }
 
 .dark-theme, .light-theme {
@@ -106,8 +113,41 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.section-content.login-section, .section-content:has(.theme-color), .section-content.btr-universe-box {
+.section-content.login-section, .section-content:has(.theme-color), .section-content.btr-universe-box, .radio-buttons-group.section-content {
     padding: 8px !important;
+}
+
+.radio-buttons-group.section-content {
+    margin: 0 !important;
+    border-radius: 18px !important;
+    background-color: var(--RadioBoxBackgroundColor) !important;
+}
+
+.radio-buttons-group.section-content .request-consent-button-container {
+    display: none !important;
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group {
+    gap: 8px;
+    margin-top: 0;
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group > div {
+    border-radius: var(--RadioBoxBorderRadius);
+    transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group > div > div {
+    padding: 12px;
+    width: 100%;
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group > div:has(.foundation-web-radio[aria-checked = true]) {
+    background-color: var(--RadioBoxActiveBackgroundColor);
+}
+
+.radio-buttons-group.section-content .foundation-web-radio-group > div:hover {
+    background-color: var(--RadioBoxHoverBackgroundColor);
 }
 
 .btr-profile-container .section-content { /* BTRoblox exclusive */
