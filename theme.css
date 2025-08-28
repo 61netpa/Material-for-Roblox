@@ -106,12 +106,16 @@
     padding: 8px 0 0 8px !important;
 }
 
-.group-details .group-profile-header, .section-content.account-switcher-section {
+.group-details .group-profile-header, .section-content.account-switcher-section, .configure-private-server-page .section-content {
     padding: 8px !important;
 }
 
 .section-content:has(.game-main-content) {
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+}
+
+.configure-private-server-page .section-content .item-preview-container .thumbnail-2d-container, .configure-private-server-page .section-content .item-preview-container .thumbnail-2d-container img {
+    border-radius: var(--ImageBorderRadius);
 }
 
 .section-content.login-section, .section-content:has(.theme-color), .section-content.btr-universe-box, .radio-buttons-group.section-content {
