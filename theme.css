@@ -549,7 +549,6 @@
     position: relative;
     background-color: var(--ContentBackgroundColor) !important;
     left: -10px;
-    overflow: hidden;
     padding: 15px 0;
 }
 
