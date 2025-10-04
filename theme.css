@@ -103,10 +103,10 @@
 .section-content, .profile-platform-container .profile-game .game-grid, .group-details .group-profile-header {
     border-radius: 18px !important;
     background-color: var(--ContentBackgroundColor) !important;
-    padding: 8px 0 0 8px !important;
+    padding: 8px !important;
 }
 
-.group-details .group-profile-header, .section-content.account-switcher-section, .configure-private-server-page .section-content {
+.group-details .group-profile-header, .section-content.account-switcher-section {
     padding: 8px !important;
 }
 
@@ -114,12 +114,8 @@
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
-.configure-private-server-page .section-content .item-preview-container .thumbnail-2d-container, .configure-private-server-page .section-content .item-preview-container .thumbnail-2d-container img {
+.configure-private-server-page .section-content .item-preview-container .thumbnail-2d-container, .configure-private-server-page .section-content .item-preview-container .thumbnail-2d-container img, #avatar-web-app .thumbnail-2d-container {
     border-radius: var(--ImageBorderRadius);
-}
-
-.section-content.login-section, .section-content:has(.theme-color), .section-content.btr-universe-box, .radio-buttons-group.section-content {
-    padding: 8px !important;
 }
 
 .radio-buttons-group.section-content {
@@ -175,7 +171,6 @@
 }
 
 .btr-profile-container .section-content { /* BTRoblox exclusive */
-    padding: 8px !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
 
