@@ -264,7 +264,7 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button {
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
@@ -272,7 +272,7 @@
     transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
-.btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker {
+.btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker, .btn-alert-lg {
     border-radius: var(--ButtonBorderRadius) !important;
 }
 
@@ -293,7 +293,7 @@
     position: relative;
 }
 
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .foundation-web-button:hover, .btn-cta-md:hover, .btn-control-lg:hover, .btn-growth-xs:hover, .web-blox-css-tss-lo77dr-Button-contained:hover, .main-btn:hover {
+.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .foundation-web-button:hover, .btn-cta-md:hover, .btn-control-lg:hover, .btn-growth-xs:hover, .web-blox-css-tss-lo77dr-Button-contained:hover, .main-btn:hover, .agree-button:hover {
     background-color: var(--AccentHoverColor) !important;
 }
 
