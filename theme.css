@@ -289,6 +289,10 @@
     gap: 5px;
 }
 
+.btn-control-small {
+    min-height: 0 !important;
+}
+
 .btn-control-xs:not(.rbx-public-game-server-item-container .rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames):after {
     position: relative;
 }
