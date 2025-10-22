@@ -535,6 +535,24 @@
     background-color: transparent !important;
 }
 
+.profile-platform-container > div > div:not(.sg-system-feedback) {
+    background-color: var(--ContentBackgroundColor);
+    border-radius: 18px;
+    padding: 8px;
+}
+
+.profile-platform-container > div > div:has(.profile-tab-content), .profile-container .btr-profile-container {
+    margin-top: 8px;
+}
+
+.user-profile-header-info button {
+    border-radius: var(--ButtonBorderRadius) !important;
+}
+
+.user-profile-header > .flex-nowrap button {
+    background-color: var(--PopoutBackgroundColor);
+}
+
 .rbx-tabs-horizontal {
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
 }
