@@ -696,7 +696,7 @@
     border-radius: 0 0 8px 8px;
 }
 
-.passkey-upsell-banner {
+.passkey-upsell-banner, .age-verification-upsell-banner {
     border-radius: 18px;
     background-color: var(--PopoutBackgroundColor) !important;
     border: 1px solid transparent;
@@ -891,6 +891,20 @@
 .btn-toggle.on {
     border-color: transparent !important;
     background-color: var(--SwitchActiveBackgroundColor) !important;
+}
+
+.foundation-web-portal-zindex > div {
+    background-color: var(--PopoutBackgroundColor);
+    transform-origin: top;
+    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+    box-shadow: var(--DropdownShadowColor) 0 8px 24px;
+    border-radius: 18px;
+    border: transparent solid;
+    scrollbar-width: none;
+}
+
+.language-selector-wrapper button, #theme-dropdown button {
+    border-radius: 18px;
 }
 
 @keyframes border-appear {
