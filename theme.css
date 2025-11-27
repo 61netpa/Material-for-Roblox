@@ -696,10 +696,14 @@
     border-radius: 0 0 8px 8px;
 }
 
-.passkey-upsell-banner, .age-verification-upsell-banner {
+.passkey-upsell-banner, .age-verification-upsell-banner, #HomeContainer .flex.grow-1.radius-medium.padding-large.stroke-standard.stroke-default.bg-shift-100 {
     border-radius: 18px;
     background-color: var(--PopoutBackgroundColor) !important;
     border: 1px solid transparent;
+}
+
+#HomeContainer .flex.grow-1.radius-medium.padding-large.stroke-standard.stroke-default.bg-shift-100 {
+    background-color: var(--ContentBackgroundColor) !important;
 }
 
 .friends-content.section .avatar-card-container, .friends-content.section .avatar-card-container .avatar-card-btns, .player-search-page .avatar-card-container, .player-search-page .avatar-card-container .avatar-card-btns {
