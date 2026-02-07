@@ -38,6 +38,7 @@
     --RadioBoxBackgroundColor: rgb(31, 32, 35);
     --RadioBoxHoverBackgroundColor: rgb(38, 39, 41);
     --RadioBoxActiveBackgroundColor: rgb(60, 61, 64);
+    --DropdownButtonBackgroundColor: rgb(39, 39, 43);
 }
 
 .light-theme {
@@ -56,6 +57,7 @@
     --RadioBoxBackgroundColor: rgb(235, 235, 235);
     --RadioBoxHoverBackgroundColor: rgb(217, 217, 217);
     --RadioBoxActiveBackgroundColor: rgb(204, 204, 204);
+    --DropdownButtonBackgroundColor: rgb(227, 227, 227);
 }
 
 .dark-theme, .light-theme {
@@ -925,8 +927,14 @@
     scrollbar-width: none;
 }
 
-.language-selector-wrapper button, #theme-dropdown button {
-    border-radius: 18px;
+.language-selector-wrapper button, #theme-select div > button {
+    border: solid transparent !important;
+    background-color: var(--DropdownButtonBackgroundColor);
+    border-radius: var(--ButtonBorderRadius);
+}
+
+.language-selector-wrapper button > div[ role = "presentation" ], #theme-select div > button > div[ role = "presentation" ] {
+    background: transparent !important;
 }
 
 @keyframes border-appear {
