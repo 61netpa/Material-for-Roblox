@@ -10,7 +10,6 @@
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
     --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
-    --RadioBoxActiveIconColor: rgb(45, 75, 156);
     --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
@@ -155,7 +154,7 @@
 }
 
 .radio-buttons-group.section-content .foundation-web-radio-group .foundation-web-radio[ aria-checked = true ] {
-    background-color: var(--RadioBoxActiveIconColor);
+    background-color: var(--Accent);
 }
 
 .foundation-web-interactable:before {
