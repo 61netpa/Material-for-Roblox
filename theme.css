@@ -3,6 +3,7 @@
 
 :root {
     --Accent: rgb(85, 123, 226);
+    --SecondaryAccentColor: hsl(from var(--Accent) h calc(s * 0.2) calc(l * 0.5));
     --AccentTextColor: rgb(246, 246, 246);
     --AccentHoverColor: rgb(127, 161, 255);
     --HoveredBorderColor: rgb(132, 132, 132);
@@ -14,6 +15,8 @@
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
     --RoundBorderRadius: calc(100% / 2);
+    --SelectorBigBorderRadius: calc(36px / 2);
+    --SelectorSmallBorderRadius: calc(36px / 5);
 }
 
 * {
@@ -793,12 +796,28 @@
     border-radius: 18px !important;
 }
 
-.gender-button:has(.icon-female) {
-    border-radius: 0 18px 18px 0;
+.gender-setting {
+    display: flex;
+    gap: 2px;
 }
 
-.gender-button:has(.icon-male) {
-    border-radius: 18px 0 0 18px;
+.gender-setting .gender-button {
+    transition: background-color 250ms var(--CubicBezierAnimation), border-radius 250ms var(--CubicBezierAnimation);
+    background-color: var(--SecondaryAccentColor);
+    border: solid transparent;
+}
+
+.gender-setting .gender-button:first-of-type {
+    border-radius: var(--SelectorBigBorderRadius) var(--SelectorSmallBorderRadius) var(--SelectorSmallBorderRadius) var(--SelectorBigBorderRadius);
+}
+
+.gender-setting .gender-button:last-of-type {
+    border-radius: var(--SelectorSmallBorderRadius) var(--SelectorBigBorderRadius) var(--SelectorBigBorderRadius) var(--SelectorSmallBorderRadius);
+}
+
+.gender-setting .gender-button:has(.selected) {
+    background-color: var(--Accent);
+    border-radius: var(--ButtonBorderRadius);
 }
 
 .rbx-select-group .rbx-select {
