@@ -937,6 +937,10 @@
     background: transparent !important;
 }
 
+.MuiSlider-track.css-10opxo5 {
+    background-color: var(--Accent);
+}
+
 @keyframes border-appear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
