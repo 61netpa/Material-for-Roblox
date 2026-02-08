@@ -24,8 +24,7 @@
 
 .dark-theme {
     --MainBackgroundColor: rgb(21, 22, 25);
-    --ContentBackgroundColor: rgba(33, 35, 38, 1);
-    --ProfileTransparentTopColor: rgba(33, 35, 38, 0);
+    --ContentBackgroundColor: rgb(33, 35, 38);
     --NavbarBackgroundColor: rgb(14, 15, 17);
     --LeftNavbarButtonHoverColor: rgb(43, 45, 49);
     --SearchBarBackgroundColor: rgb(39, 39, 42);
@@ -44,8 +43,7 @@
 
 .light-theme {
     --MainBackgroundColor: rgb(250, 250, 250);
-    --ContentBackgroundColor: rgba(228, 230, 231, 1);
-    --ProfileTransparentTopColor: rgba(228, 230, 231, 0);
+    --ContentBackgroundColor: rgb(228, 230, 231);
     --NavbarBackgroundColor: rgb(232, 232, 232);
     --LeftNavbarButtonHoverColor: rgb(218, 219, 221);
     --SearchBarBackgroundColor: rgb(207, 207, 207);
