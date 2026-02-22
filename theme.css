@@ -10,6 +10,7 @@
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
     --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
+    --AlertColor: rgb(240, 71, 71);
     --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
@@ -278,6 +279,12 @@
 
 .btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker, .btn-alert-lg {
     border-radius: var(--ButtonBorderRadius) !important;
+}
+
+.btn-alert-sm {
+    background-color: var(--AlertColor) !important;
+    color: var(--SwitchColor) !important;
+    border: transparent solid !important;
 }
 
 .left-col-list .rbx-upgrade-now .btn-growth-md {
