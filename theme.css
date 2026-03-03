@@ -4,13 +4,14 @@
 :root {
     --Accent: rgb(85, 123, 226);
     --AccentTextColor: rgb(246, 246, 246);
-    --AccentHoverColor: rgb(127, 161, 255);
     --HoveredBorderColor: rgb(132, 132, 132);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
     --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
     --AlertColor: rgb(240, 71, 71);
     --AccentTextColor: rgb(255, 255, 255);
+    --ActionButtonColor: rgb(255, 255, 255);
+    --ActionHoverTransparency: 0.06;
     --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
@@ -228,7 +229,7 @@
 
 .game-details-play-button-container > button {
     border-radius: 16px !important;
-    transition: transform 250ms var(--CubicBezierAnimation), background-color 250ms var(--CubicBezierAnimation);
+    transition: transform 250ms var(--CubicBezierAnimation);
 }
 
 .game-details-play-button-container > button:not(.random-server-button) {
@@ -237,6 +238,10 @@
 
 .game-details-play-button-container > button:hover {
     transform: scale(1.1);
+}
+
+.game-details-play-button-container > button:before {
+    border-radius: 16px !important;
 }
 
 .friend-tile-dropdown {
@@ -272,11 +277,29 @@
 }
 
 .btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button {
+    position: relative;
     border-radius: var(--ButtonBorderRadius) !important;
     background-color: var(--Accent) !important;
     border: none !important;
     color: var(--AccentTextColor) !important;
     transition: background-color 250ms var(--CubicBezierAnimation);
+}
+
+.btn-growth-sm:before, .btn-primary-md:before, .btn-control-small:before, .btn-growth-md:before, .btn-control-sm:before, .btn-primary-lg:before, .btn-growth-lg:before, .btn-control-md:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):before, .foundation-web-button:before, .btn-cta-md:before, .btn-control-lg:before, .btn-growth-xs:before, .web-blox-css-tss-lo77dr-Button-contained:before, .main-btn:before, .agree-button:before {
+    position: absolute;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    background-color: var(--ActionButtonColor);
+    border-radius: var(--ButtonBorderRadius);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms var(--CubicBezierAnimation);
+}
+
+.btn-growth-sm:hover:before, .btn-primary-md:hover:before, .btn-control-small:hover:before, .btn-growth-md:hover:before, .btn-control-sm:hover:before, .btn-primary-lg:hover:before, .btn-growth-lg:hover:before, .btn-control-md:hover:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover:before, .foundation-web-button:hover:before, .btn-cta-md:hover:before, .btn-control-lg:hover:before, .btn-growth-xs:hover:before, .web-blox-css-tss-lo77dr-Button-contained:hover:before, .main-btn:hover:before, .agree-button:hover:before {
+    opacity: var(--ActionHoverTransparency);
 }
 
 .btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker, .btn-alert-lg {
@@ -308,10 +331,6 @@
 
 .btn-control-xs:not(.rbx-public-game-server-item-container .rbx-public-game-server-item *, .profile-view-selector, .btn-pastnames):after {
     position: relative;
-}
-
-.btn-growth-sm:hover, .btn-primary-md:hover, .btn-control-small:hover, .btn-growth-md:hover, .btn-control-sm:hover, .btn-primary-lg:hover, .btn-growth-lg:hover, .btn-control-md:hover, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover, .foundation-web-button:hover, .btn-cta-md:hover, .btn-control-lg:hover, .btn-growth-xs:hover, .web-blox-css-tss-lo77dr-Button-contained:hover, .main-btn:hover, .agree-button:hover {
-    background-color: var(--AccentHoverColor) !important;
 }
 
 .left-col-list .rbx-upgrade-now .btn-growth-md:hover {
@@ -786,14 +805,17 @@
     fill: transparent !important;
 }
 
-.screentime-chart-container .highcharts-point {
+.screentime-chart-container .highcharts-series > path {
     fill: var(--Accent) !important;
-    transition: fill 250ms var(--CubicBezierAnimation) !important;
+    transition: filter 250ms var(--CubicBezierAnimation) !important;
 }
 
-.screentime-chart-container .highcharts-point-hover {
-    fill: var(--AccentHoverColor) !important;
+.highcharts-column-series .highcharts-point-hover {
     fill-opacity: 1;
+}
+
+.screentime-chart-container .highcharts-series > path:hover {
+    filter: brightness(1.2);
 }
 
 #settings-container .group-wrapper {
@@ -848,15 +870,6 @@
 
 .rbx-select-group .rbx-select {
     border-radius: 18px;
-}
-
-.scroll-arrow {
-    background-color: var(--Accent) !important;
-    transition: opacity 250ms var(--CubicBezierAnimation), background-color 250ms var(--CubicBezierAnimation);
-}
-
-.scroll-arrow:hover {
-    background-color: var(--AccentHoverColor) !important;
 }
 
 #sandbox .catalog-tabs { /* RoPro exclusive */
