@@ -11,6 +11,7 @@
     --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
     --AlertColor: rgb(240, 71, 71);
+    --AccentTextColor: rgb(255, 255, 255);
     --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
@@ -962,6 +963,16 @@
 
 .MuiSlider-track.css-10opxo5 {
     background-color: var(--Accent);
+}
+
+.notification-blue, .game-card-pill-with-animation {
+    background-color: var(--Accent) !important;
+    color: var(--AccentTextColor) !important;
+}
+
+.btr-nav-notif.rbx-text-navbar-right {
+    background-color: var(--AlertColor) !important;
+    color: var(--AccentTextColor) !important;
 }
 
 @keyframes border-appear {
