@@ -6,7 +6,6 @@
     --AccentTextColor: rgb(246, 246, 246);
     --HoveredBorderColor: rgb(132, 132, 132);
     --CubicBezierAnimation: cubic-bezier(0.4, 0, 0.2, 1);
-    --SwitchActiveBackgroundColor: rgb(85, 123, 226);
     --SwitchColor: rgb(255, 255, 255);
     --AlertColor: rgb(240, 71, 71);
     --AccentTextColor: rgb(255, 255, 255);
@@ -952,7 +951,7 @@
 
 .btn-toggle.on {
     border-color: transparent !important;
-    background-color: var(--SwitchActiveBackgroundColor) !important;
+    background-color: var(--Accent) !important;
 }
 
 .foundation-web-portal-zindex > div {
