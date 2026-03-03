@@ -3,7 +3,6 @@
 
 :root {
     --Accent: rgb(85, 123, 226);
-    --SecondaryAccentColor: hsl(from var(--Accent) h calc(s * 0.2) calc(l * 0.5));
     --AccentTextColor: rgb(246, 246, 246);
     --AccentHoverColor: rgb(127, 161, 255);
     --HoveredBorderColor: rgb(132, 132, 132);
@@ -25,6 +24,7 @@
 }
 
 .dark-theme {
+    --SecondaryAccentColor: hsl(from var(--Accent) h calc(s * 0.2) calc(l * 0.5));
     --MainBackgroundColor: rgb(21, 22, 25);
     --ContentBackgroundColor: rgb(33, 35, 38);
     --NavbarBackgroundColor: rgb(14, 15, 17);
@@ -44,6 +44,7 @@
 }
 
 .light-theme {
+    --SecondaryAccentColor: hsl(from var(--Accent) h calc(s * 0.6) calc(l * 1.425));
     --MainBackgroundColor: rgb(250, 250, 250);
     --ContentBackgroundColor: rgb(228, 230, 231);
     --NavbarBackgroundColor: rgb(232, 232, 232);
@@ -973,6 +974,8 @@
 .btr-nav-notif.rbx-text-navbar-right {
     background-color: var(--AlertColor) !important;
     color: var(--AccentTextColor) !important;
+    border-color: transparent !important;
+    top: 0px !important;
 }
 
 @keyframes border-appear {
