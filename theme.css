@@ -318,6 +318,7 @@
 }
 
 .left-col-list .rbx-upgrade-now .btn-growth-md {
+    background-color: var(--Accent) !important;
     width: 100%;
     margin-left: -8px;
     border: solid transparent !important;
