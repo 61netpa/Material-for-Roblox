@@ -11,6 +11,7 @@
     --AccentTextColor: rgb(255, 255, 255);
     --ActionButtonColor: rgb(255, 255, 255);
     --ActionHoverTransparency: 0.06;
+    --TransitionTime: 250ms;
     --ButtonBorderRadius: calc(Infinity * 1px);
     --ImageBorderRadius: calc(18px / 1.75);
     --RadioBoxBorderRadius: calc(18px / 1.65);
@@ -73,7 +74,7 @@
 
 .left-col-list > li, .left-col-list .rbx-platform-event-container .rbx-platform-event-header {
     display: flex !important;
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
     border-radius: var(--ButtonBorderRadius);
     height: 40px;
     padding-left: 5px;
@@ -142,7 +143,7 @@
 
 .radio-buttons-group.section-content .foundation-web-radio-group > div {
     border-radius: var(--RadioBoxBorderRadius);
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .radio-buttons-group.section-content .foundation-web-radio-group > div > div {
@@ -168,7 +169,7 @@
 
 .radio-buttons-group.section-content .foundation-web-radio-group .foundation-web-radio .foundation-web-radio-indicator:after {
     background-color: var(--RadioBoxBackgroundColor);
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
     height: 12px;
     width: 12px;
 }
@@ -205,7 +206,7 @@
     border-top: solid transparent;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     transform-origin: top;
-    animation: opacity-anim 250ms var(--CubicBezierAnimation), dropdown-menu-anim 250ms var(--CubicBezierAnimation);
+    animation: opacity-anim var(--TransitionTime) var(--CubicBezierAnimation), dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .tab-horizontal-submenu.section-content.six-column {
@@ -228,7 +229,7 @@
 
 .game-details-play-button-container > button {
     border-radius: 16px !important;
-    transition: transform 250ms var(--CubicBezierAnimation);
+    transition: transform var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .game-details-play-button-container > button:not(.random-server-button) {
@@ -250,16 +251,16 @@
 .friend-tile-dropdown, .web-blox-css-mui-hjn929.MuiPaper-elevation {
     border-radius: 8px !important;
     transform-origin: top;
-    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+    animation: dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation), opacity-anim var(--TransitionTime) var(--CubicBezierAnimation);
     background-color: var(--PopoutBackgroundColor) !important;
 }
 
 .friend-tile-dropdown-button {
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .friend-tile-dropdown-button span, .left-col-list span  { /* This was very unintentional but it looks AWESOME! */
-    transition: background-position 250ms var(--CubicBezierAnimation);
+    transition: background-position var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .friend-tile-dropdown-button:has(.icon-viewdetails) {
@@ -275,16 +276,19 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button, .btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker, .btn-alert-lg {
     position: relative;
     border-radius: var(--ButtonBorderRadius) !important;
+    transition: color var(--TransitionTime) var(--CubicBezierAnimation);
+}
+
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button {
     background-color: var(--Accent) !important;
     border: none !important;
     color: var(--AccentTextColor) !important;
-    transition: background-color 250ms var(--CubicBezierAnimation);
 }
 
-.btn-growth-sm:before, .btn-primary-md:before, .btn-control-small:before, .btn-growth-md:before, .btn-control-sm:before, .btn-primary-lg:before, .btn-growth-lg:before, .btn-control-md:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):before, .foundation-web-button:before, .btn-cta-md:before, .btn-control-lg:before, .btn-growth-xs:before, .web-blox-css-tss-lo77dr-Button-contained:before, .main-btn:before, .agree-button:before {
+.btn-growth-sm:before, .btn-primary-md:before, .btn-control-small:before, .btn-growth-md:before, .btn-control-sm:before, .btn-primary-lg:before, .btn-growth-lg:before, .btn-control-md:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):before, .foundation-web-button:before, .btn-cta-md:before, .btn-control-lg:before, .btn-growth-xs:before, .web-blox-css-tss-lo77dr-Button-contained:before, .main-btn:before, .agree-button:before, .btn-secondary-md:before, .btn-secondary-sm:before, .btn-alert-sm:before {
     position: absolute;
     content: " ";
     width: 100%;
@@ -294,15 +298,17 @@
     border-radius: var(--ButtonBorderRadius);
     opacity: 0;
     pointer-events: none;
-    transition: opacity 250ms var(--CubicBezierAnimation);
+    transition: opacity var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
-.btn-growth-sm:hover:before, .btn-primary-md:hover:before, .btn-control-small:hover:before, .btn-growth-md:hover:before, .btn-control-sm:hover:before, .btn-primary-lg:hover:before, .btn-growth-lg:hover:before, .btn-control-md:hover:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover:before, .foundation-web-button:hover:before, .btn-cta-md:hover:before, .btn-control-lg:hover:before, .btn-growth-xs:hover:before, .web-blox-css-tss-lo77dr-Button-contained:hover:before, .main-btn:hover:before, .agree-button:hover:before {
+.btn-growth-sm:hover:before, .btn-primary-md:hover:before, .btn-control-small:hover:before, .btn-growth-md:hover:before, .btn-control-sm:hover:before, .btn-primary-lg:hover:before, .btn-growth-lg:hover:before, .btn-control-md:hover:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover:before, .foundation-web-button:hover:before, .btn-cta-md:hover:before, .btn-control-lg:hover:before, .btn-growth-xs:hover:before, .web-blox-css-tss-lo77dr-Button-contained:hover:before, .main-btn:hover:before, .agree-button:hover:before, .btn-secondary-md:hover:before, .btn-secondary-sm:hover:before, .btn-alert-sm:hover:before {
     opacity: var(--ActionHoverTransparency);
 }
 
-.btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker, .btn-alert-lg {
-    border-radius: var(--ButtonBorderRadius) !important;
+.btn-secondary-md, .btn-secondary-sm {
+    background-color: var(--SecondaryAccentColor) !important;
+    border-color: transparent !important;
+    transition: color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .btn-alert-sm {
@@ -337,12 +343,12 @@
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
-    animation: border-appear 250ms var(--CubicBezierAnimation);
+    animation: border-appear var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .dropdown-menu, .popover-content, #avatar-card-dropdown-menu.popover.bottom, .search-landing-container, div[id ^= "game-management-dropdown"], #catalog-react-container .catalog-revamp .filters-modal-container {
     transform-origin: top;
-    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+    animation: dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation), opacity-anim var(--TransitionTime) var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     border-radius: 18px;
     scrollbar-width: none;
@@ -357,11 +363,11 @@
 }
 
 .dropdown-menu > li {
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .dropdown-menu > li > a {
-    transition: color 250ms var(--CubicBezierAnimation);
+    transition: color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .popover.bottom:not(:has(.notification-stream-header)) > .arrow:after {
@@ -369,7 +375,7 @@
 }
 
 .chat-main {
-    transition: height 250ms var(--CubicBezierAnimation), width 250ms var(--CubicBezierAnimation); /* Width too because BTR can change the chat button's width. */
+    transition: height var(--TransitionTime) var(--CubicBezierAnimation), width var(--TransitionTime) var(--CubicBezierAnimation); /* Width too because BTR can change the chat button's width. */
     border-radius: 18px 18px 0 0;
     background-color: var(--PopoutBackgroundColor) !important;
 }
@@ -390,7 +396,7 @@
 
 .chat-main .chat-friend-container {
     border-radius: 28px;
-    transition: background-color 250ms var(--CubicBezierAnimation), color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation), color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .chat-main .chat-friend-container .chat-conversation-universe .thumbnail-2d-container, .chat-main .chat-friend-container .chat-conversation-universe .thumbnail-2d-container img {
@@ -418,7 +424,7 @@
 }
 
 .game-card-container .ropro-card-quick-play-options { /* RoPro exclusive */
-    transition: right 250ms var(--CubicBezierAnimation), opacity 250ms var(--CubicBezierAnimation) !important;
+    transition: right var(--TransitionTime) var(--CubicBezierAnimation), opacity var(--TransitionTime) var(--CubicBezierAnimation) !important;
 }
 
 .game-card-container button:not(.experience-events-tile *) {
@@ -436,7 +442,7 @@
 
 .navbar-right.rbx-navbar-icon-group > li > button:not(.btn-navigation-nav-robux-md), .navbar-right.rbx-navbar-icon-group > li > a {
     border-radius: var(--RoundBorderRadius) !important;
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .navbar-right.rbx-navbar-icon-group .btn-navigation-nav-robux-md {
@@ -461,7 +467,7 @@
 .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading {
     background-color: rgba(0, 0, 0, 0) !important;
     box-shadow: none !important;
-    transition: box-shadow 250ms var(--CubicBezierAnimation);
+    transition: box-shadow var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .rbx-tabs-horizontal.roblox-messages-container, .table.table-striped.transactions {
@@ -486,7 +492,7 @@
 
 .item-card-thumb-container, .item-card-thumb-container:before, .item-card-thumb, .item-card-equipped, .item-card-menu.ng-scope.ng-isolate-scope.active {
     border-radius: 28px !important;
-    transition: opacity 250ms var(--CubicBezierAnimation) !important;
+    transition: opacity var(--TransitionTime) var(--CubicBezierAnimation) !important;
 }
 
 .page-content .rbx-tabs-horizontal {
@@ -542,7 +548,7 @@
 
 .text.ng-binding.ng-scope {
     border-radius: var(--ButtonBorderRadius) !important;
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .roblox-message-row, .message-news {
@@ -623,7 +629,7 @@
     border-radius: 18px;
     background-color: var(--PopoutBackgroundColor) !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px !important;
-    animation: opacity-anim 250ms var(--CubicBezierAnimation), dropdown-menu-anim 250ms var(--CubicBezierAnimation);
+    animation: opacity-anim var(--TransitionTime) var(--CubicBezierAnimation), dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation);
     padding: 8px;
     gap: 4px;
 }
@@ -631,7 +637,7 @@
 .assets-explorer-main-content .menu-vertical-container .menu-secondary .menu-secondary-option {
     border-radius: 18px;
     width: 100%;
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 #group-container .menu-vertical-container {
@@ -649,7 +655,7 @@
 }
 
 .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content, #settings-container .menu-vertical .menu-option-content, #settings-container .menu-vertical .menu-option {
-    transition: box-shadow 250ms var(--CubicBezierAnimation);
+    transition: box-shadow var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option:not(.active):hover, .assets-explorer-main-content .menu-vertical-container.category-tabs .menu-vertical.submenus .menu-option-content:hover, #settings-container .menu-vertical .menu-option-content:not(.active):hover, #settings-container .menu-vertical .menu-option:not(:has(.active)):hover, .menu-vertical-container .menu-vertical .menu-option:not(:has(.active)):hover {
@@ -806,7 +812,7 @@
 
 .screentime-chart-container .highcharts-series > path {
     fill: var(--Accent) !important;
-    transition: filter 250ms var(--CubicBezierAnimation) !important;
+    transition: filter var(--TransitionTime) var(--CubicBezierAnimation) !important;
 }
 
 .highcharts-column-series .highcharts-point-hover {
@@ -819,7 +825,7 @@
 
 #settings-container .group-wrapper {
     border-radius: 18px;
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 #settings-container .group-wrapper.group-open {
@@ -849,7 +855,7 @@
 }
 
 .gender-setting .gender-button {
-    transition: background-color 250ms var(--CubicBezierAnimation), border-radius 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation), border-radius var(--TransitionTime) var(--CubicBezierAnimation);
     background-color: var(--SecondaryAccentColor);
     border: solid transparent;
 }
@@ -881,7 +887,7 @@
 }
 
 #sandbox .catalog-tabs .catalog-tab { /* RoPro exclusive */
-    transition: border-bottom 250ms var(--CubicBezierAnimation);
+    transition: border-bottom var(--TransitionTime) var(--CubicBezierAnimation);
     border-bottom: solid transparent;
 }
 
@@ -919,7 +925,7 @@
 
 #catalog-react-container .catalog-revamp .filters-modal-container .filter-options-container .filter-option {
     border-radius: var(--ButtonBorderRadius);
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .icon-radio-check-circle-filled {
@@ -927,11 +933,11 @@
 }
 
 .profile-tabs .profile-tab {
-    transition: box-shadow 250ms var(--CubicBezierAnimation), color 250ms var(--CubicBezierAnimation);
+    transition: box-shadow var(--TransitionTime) var(--CubicBezierAnimation), color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .btn-toggle {
-    transition: background-color 250ms var(--CubicBezierAnimation);
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
     border: 2px solid var(--SwitchBorderColor) !important;
     background-color: var(--SwitchBackgroundColor) !important;
 }
@@ -941,7 +947,7 @@
     right: inherit !important;
     left: inherit !important;
     transform: translate(-18px, -2px) scale(0.9);
-    transition: transform 250ms var(--CubicBezierAnimation);
+    transition: transform var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .btn-toggle.on .toggle-flip {
@@ -957,7 +963,7 @@
 .foundation-web-portal-zindex > div {
     background-color: var(--PopoutBackgroundColor);
     transform-origin: top;
-    animation: dropdown-menu-anim 250ms var(--CubicBezierAnimation), opacity-anim 250ms var(--CubicBezierAnimation);
+    animation: dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation), opacity-anim var(--TransitionTime) var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     border-radius: 18px;
     border: transparent solid;
