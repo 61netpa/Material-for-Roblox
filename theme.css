@@ -276,7 +276,7 @@
     border-radius: var(--ButtonBorderRadius);
 }
 
-.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button, .btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .location-picker, .btn-alert-lg, .btn-primary-xs {
+.btn-growth-sm, .btn-primary-md, .btn-control-small, .btn-growth-md, .btn-control-sm, .btn-primary-lg, .btn-growth-lg, .btn-control-md, .btn-control-xs:not(.profile-view-selector, .btn-pastnames), .foundation-web-button, .btn-cta-md, .btn-control-lg, .btn-growth-xs, .web-blox-css-tss-lo77dr-Button-contained, .main-btn, .agree-button, .btn-secondary-md, .btn-alert-sm, .btn-secondary-sm, .btn-secondary-xs, .location-picker, .btn-alert-lg, .btn-primary-xs {
     position: relative;
     border-radius: var(--ButtonBorderRadius) !important;
     transition: color var(--TransitionTime) var(--CubicBezierAnimation);
@@ -288,7 +288,7 @@
     color: var(--AccentTextColor) !important;
 }
 
-.btn-growth-sm:before, .btn-primary-md:before, .btn-control-small:before, .btn-growth-md:before, .btn-control-sm:before, .btn-primary-lg:before, .btn-growth-lg:before, .btn-control-md:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):before, .foundation-web-button:before, .btn-cta-md:before, .btn-control-lg:before, .btn-growth-xs:before, .web-blox-css-tss-lo77dr-Button-contained:before, .main-btn:before, .agree-button:before, .btn-secondary-md:before, .btn-secondary-sm:before, .btn-alert-sm:before, .btn-primary-xs:before {
+.btn-growth-sm:before, .btn-primary-md:before, .btn-control-small:before, .btn-growth-md:before, .btn-control-sm:before, .btn-primary-lg:before, .btn-growth-lg:before, .btn-control-md:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):before, .foundation-web-button:before, .btn-cta-md:before, .btn-control-lg:before, .btn-growth-xs:before, .web-blox-css-tss-lo77dr-Button-contained:before, .main-btn:before, .agree-button:before, .btn-secondary-md:before, .btn-secondary-sm:before, .btn-secondary-xs:before, .btn-alert-sm:before, .btn-primary-xs:before {
     position: absolute;
     content: " ";
     width: 100%;
@@ -301,7 +301,7 @@
     transition: opacity var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
-.btn-growth-sm:hover:before, .btn-primary-md:hover:before, .btn-control-small:hover:before, .btn-growth-md:hover:before, .btn-control-sm:hover:before, .btn-primary-lg:hover:before, .btn-growth-lg:hover:before, .btn-control-md:hover:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover:before, .foundation-web-button:hover:before, .btn-cta-md:hover:before, .btn-control-lg:hover:before, .btn-growth-xs:hover:before, .web-blox-css-tss-lo77dr-Button-contained:hover:before, .main-btn:hover:before, .agree-button:hover:before, .btn-secondary-md:hover:before, .btn-secondary-sm:hover:before, .btn-alert-sm:hover:before, .btn-primary-xs:hover:before {
+.btn-growth-sm:hover:before, .btn-primary-md:hover:before, .btn-control-small:hover:before, .btn-growth-md:hover:before, .btn-control-sm:hover:before, .btn-primary-lg:hover:before, .btn-growth-lg:hover:before, .btn-control-md:hover:before, .btn-control-xs:not(.profile-view-selector, .btn-pastnames):hover:before, .foundation-web-button:hover:before, .btn-cta-md:hover:before, .btn-control-lg:hover:before, .btn-growth-xs:hover:before, .web-blox-css-tss-lo77dr-Button-contained:hover:before, .main-btn:hover:before, .agree-button:hover:before, .btn-secondary-md:hover:before, .btn-secondary-sm:hover:before, .btn-secondary-xs:hover:before, .btn-alert-sm:hover:before, .btn-primary-xs:hover:before {
     opacity: var(--ActionHoverTransparency);
 }
 
@@ -309,7 +309,7 @@
     filter: none !important;
 }
 
-.btn-secondary-md, .btn-secondary-sm {
+.btn-secondary-md, .btn-secondary-sm, .btn-secondary-xs {
     background-color: var(--SecondaryAccentColor) !important;
     border-color: transparent !important;
     transition: color var(--TransitionTime) var(--CubicBezierAnimation);
@@ -999,6 +999,18 @@
     color: var(--AccentTextColor) !important;
     border-color: transparent !important;
     top: 0px !important;
+}
+
+.notification-stream-header {
+    background-color: var(--NavbarBackgroundColor) !important;
+}
+
+.notification-stream-list, .mCSB_scrollTools.mCSB_scrollTools_vertical {
+    background-color: var(--ContentBackgroundColor) !important;
+}
+
+.sendr-notification-background {
+    background-color: var(--ContentCardBackgroundColor) !important;
 }
 
 @keyframes border-appear {
