@@ -989,7 +989,7 @@
     background-color: var(--Accent);
 }
 
-.notification-blue, .game-card-pill-with-animation {
+.notification-blue, .game-card-pill-with-animation, .new-item-pill {
     background-color: var(--Accent) !important;
     color: var(--AccentTextColor) !important;
 }
