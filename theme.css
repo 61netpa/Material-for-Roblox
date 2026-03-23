@@ -206,7 +206,7 @@
     border-top: solid transparent;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     transform-origin: top;
-    animation: opacity-anim var(--TransitionTime) var(--CubicBezierAnimation), dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation);
+    animation: OpacityAnimation var(--TransitionTime) var(--CubicBezierAnimation), DropdownMenuAnimation var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .tab-horizontal-submenu.section-content.six-column {
@@ -251,7 +251,7 @@
 .friend-tile-dropdown, .web-blox-css-mui-hjn929.MuiPaper-elevation {
     border-radius: 8px !important;
     transform-origin: top;
-    animation: dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation), opacity-anim var(--TransitionTime) var(--CubicBezierAnimation);
+    animation: DropdownMenuAnimation var(--TransitionTime) var(--CubicBezierAnimation), OpacityAnimation var(--TransitionTime) var(--CubicBezierAnimation);
     background-color: var(--PopoutBackgroundColor) !important;
 }
 
@@ -348,12 +348,12 @@
 }
 
 .nav.rbx-navbar.hidden-xs.hidden-sm > li:hover {
-    animation: border-appear var(--TransitionTime) var(--CubicBezierAnimation);
+    animation: BorderAppear var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
 .dropdown-menu, .popover-content, #avatar-card-dropdown-menu.popover.bottom, .search-landing-container, div[id ^= "game-management-dropdown"], #catalog-react-container .catalog-revamp .filters-modal-container {
     transform-origin: top;
-    animation: dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation), opacity-anim var(--TransitionTime) var(--CubicBezierAnimation);
+    animation: DropdownMenuAnimation var(--TransitionTime) var(--CubicBezierAnimation), OpacityAnimation var(--TransitionTime) var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     border-radius: 18px;
     scrollbar-width: none;
@@ -634,7 +634,7 @@
     border-radius: 18px;
     background-color: var(--PopoutBackgroundColor) !important;
     box-shadow: var(--DropdownShadowColor) 0 8px 24px !important;
-    animation: opacity-anim var(--TransitionTime) var(--CubicBezierAnimation), dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation);
+    animation: OpacityAnimation var(--TransitionTime) var(--CubicBezierAnimation), DropdownMenuAnimation var(--TransitionTime) var(--CubicBezierAnimation);
     padding: 8px;
     gap: 4px;
 }
@@ -968,7 +968,7 @@
 .foundation-web-portal-zindex > div {
     background-color: var(--PopoutBackgroundColor);
     transform-origin: top;
-    animation: dropdown-menu-anim var(--TransitionTime) var(--CubicBezierAnimation), opacity-anim var(--TransitionTime) var(--CubicBezierAnimation);
+    animation: DropdownMenuAnimation var(--TransitionTime) var(--CubicBezierAnimation), OpacityAnimation var(--TransitionTime) var(--CubicBezierAnimation);
     box-shadow: var(--DropdownShadowColor) 0 8px 24px;
     border-radius: 18px;
     border: transparent solid;
@@ -1013,19 +1013,19 @@
     background-color: var(--ContentCardBackgroundColor) !important;
 }
 
-@keyframes border-appear {
+@keyframes BorderAppear {
     from {
         border-bottom-color: rgba(0, 0, 0, 0)
     }
 }
 
-@keyframes opacity-anim {
+@keyframes OpacityAnimation {
     from {
         opacity: 0;
     }
 }
 
-@keyframes dropdown-menu-anim {
+@keyframes DropdownMenuAnimation {
     from {
         transform: scale(1, 0.5);
     }
