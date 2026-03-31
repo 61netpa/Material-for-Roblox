@@ -64,8 +64,8 @@
     --DropdownButtonBackgroundColor: rgb(227, 227, 227);
 }
 
-.dark-theme, .light-theme {
-    background-color: var(--MainBackgroundColor);
+.dark-theme, .light-theme, .rbx-login-form {
+    background-color: var(--MainBackgroundColor) !important;
 }
 
 .rbx-left-col {
@@ -854,28 +854,36 @@
     border-radius: 18px !important;
 }
 
-.gender-setting {
+.gender-setting, .form-control.fake-input-lg {
     display: flex;
     gap: 2px;
 }
 
-.gender-setting .gender-button {
+.gender-setting .gender-button, .form-control.fake-input-lg .gender-button {
     transition: background-color var(--TransitionTime) var(--CubicBezierAnimation), border-radius var(--TransitionTime) var(--CubicBezierAnimation);
     background-color: var(--SecondaryAccentColor);
     border: solid transparent;
 }
 
-.gender-setting .gender-button:first-of-type {
-    border-radius: var(--SelectorBigBorderRadius) var(--SelectorSmallBorderRadius) var(--SelectorSmallBorderRadius) var(--SelectorBigBorderRadius);
+.gender-setting .gender-button:first-of-type, .form-control.fake-input-lg .gender-button:first-of-type {
+    border-radius: var(--SelectorBigBorderRadius) var(--SelectorSmallBorderRadius) var(--SelectorSmallBorderRadius) var(--SelectorBigBorderRadius) !important;
 }
 
-.gender-setting .gender-button:last-of-type {
-    border-radius: var(--SelectorSmallBorderRadius) var(--SelectorBigBorderRadius) var(--SelectorBigBorderRadius) var(--SelectorSmallBorderRadius);
+.gender-setting .gender-button:last-of-type, .form-control.fake-input-lg .gender-button:last-of-type {
+    border-radius: var(--SelectorSmallBorderRadius) var(--SelectorBigBorderRadius) var(--SelectorBigBorderRadius) var(--SelectorSmallBorderRadius) !important;
 }
 
-.gender-setting .gender-button:has(.selected) {
+.form-control.fake-input-lg .gender-button {
+    border: solid transparent !important;
+}
+
+.gender-setting .gender-button:has(.selected), .form-control.fake-input-lg .gender-button:has(.gender-selected) {
     background-color: var(--Accent);
-    border-radius: var(--ButtonBorderRadius);
+    border-radius: var(--ButtonBorderRadius) !important;
+}
+
+.form-control:has(.gender-button) {
+    background-color: transparent !important;
 }
 
 .rbx-select-group .rbx-select {
