@@ -1003,8 +1003,12 @@
     background-color: var(--Accent);
 }
 
-.notification-blue, .game-card-pill-with-animation, .new-item-pill {
+.notification-blue, .game-card-pill-with-animation, .new-item-pill, .left-nav .flex.flex-col > li > :is(a, button) .foundation-web-badge {
     background-color: var(--Accent) !important;
+    color: var(--AccentTextColor) !important;
+}
+
+.left-nav .flex.flex-col > li > :is(a, button) .foundation-web-badge > span {
     color: var(--AccentTextColor) !important;
 }
 
