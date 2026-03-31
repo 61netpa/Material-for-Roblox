@@ -68,7 +68,7 @@
     background-color: var(--MainBackgroundColor) !important;
 }
 
-.rbx-left-col {
+.rbx-left-col, .left-nav {
     background-color: var(--NavbarBackgroundColor) !important;
 }
 
@@ -82,6 +82,12 @@
     margin-right: -10px;
 }
 
+.left-nav .flex.flex-col > li > :is(a, button) {
+    transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
+    border-radius: var(--ButtonBorderRadius);
+    height: 40px;
+}
+
 .left-col-list > li > a {
     width: 100%;
 }
@@ -90,7 +96,7 @@
     padding-right: 5px;
 }
 
-.left-col-list > li:not(.rbx-upgrade-now):hover, .left-col-list .rbx-platform-event-container .rbx-platform-event-header:hover {
+.left-col-list > li:not(.rbx-upgrade-now):hover, .left-nav .flex.flex-col > li > :is(a, button):not(.foundation-web-button):hover, .left-col-list .rbx-platform-event-container .rbx-platform-event-header:hover {
     background-color: var(--LeftNavbarButtonHoverColor) !important;
 }
 
