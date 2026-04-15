@@ -88,6 +88,10 @@
     height: 40px;
 }
 
+.left-nav [ role = "separator"] {
+    display: none;
+}
+
 .left-col-list > li > a {
     width: 100%;
 }
