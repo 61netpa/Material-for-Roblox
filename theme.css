@@ -993,13 +993,13 @@
     scrollbar-width: none;
 }
 
-.language-selector-wrapper button, #theme-select div > button {
+.language-selector-wrapper button, #experience-translation-dropdown button, #theme-select div > button {
     border: solid transparent !important;
     background-color: var(--DropdownButtonBackgroundColor);
     border-radius: var(--ButtonBorderRadius);
 }
 
-.language-selector-wrapper button > div[ role = "presentation" ], #theme-select div > button > div[ role = "presentation" ] {
+.language-selector-wrapper button > div[ role = "presentation" ], #experience-translation-dropdown button > div[ role = "presentation" ], #theme-select div > button > div[ role = "presentation" ] {
     background: transparent !important;
 }
 
