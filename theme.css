@@ -959,13 +959,14 @@
     transition: box-shadow var(--TransitionTime) var(--CubicBezierAnimation), color var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
-.btn-toggle {
+.btn-toggle, .settings-list-item-value-arrow button {
     transition: background-color var(--TransitionTime) var(--CubicBezierAnimation);
     border: 2px solid var(--SwitchBorderColor) !important;
     background-color: var(--SwitchBackgroundColor) !important;
 }
 
-.btn-toggle .toggle-flip {
+.btn-toggle .toggle-flip, .settings-list-item-value-arrow button > span:has(.icon) {
+    position: absolute;
     background-color: var(--SwitchBorderColor) !important;
     right: inherit !important;
     left: inherit !important;
@@ -973,12 +974,24 @@
     transition: transform var(--TransitionTime) var(--CubicBezierAnimation);
 }
 
-.btn-toggle.on .toggle-flip {
+.settings-list-item-value-arrow button > span:has(.icon) {
+    transform: translate(-2px, 0px) scale(0.9);
+}
+
+.btn-toggle.on .toggle-flip, .settings-list-item-value-arrow button[ data-state = "checked" ] > span:has(.icon) {
     background-color: var(--SwitchColor) !important;
     transform: translate(-2px, -2px);
 }
 
-.btn-toggle.on {
+.settings-list-item-value-arrow button[ data-state = "checked" ] > span:has(.icon) {
+    transform: translate(14px, 0px);
+}
+
+.settings-list-item-value-arrow button[ data-state = "checked" ] > span:has(.icon) > span {
+    color: var(--SwitchColor);
+}
+
+.btn-toggle.on, .settings-list-item-value-arrow button[ data-state = "checked" ] {
     border-color: transparent !important;
     background-color: var(--Accent) !important;
 }
