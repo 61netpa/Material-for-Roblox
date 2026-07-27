@@ -601,10 +601,6 @@
     margin: 0;
 }
 
-.profile-platform-container .profile-avatar-left > div {
-    display: none;
-}
-
 .profile-platform-container .profile-header-overlay {
     margin-top: 10px;
 }
